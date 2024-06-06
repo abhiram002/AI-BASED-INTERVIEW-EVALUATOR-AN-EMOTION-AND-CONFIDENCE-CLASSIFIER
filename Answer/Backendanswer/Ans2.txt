@@ -1,0 +1,1 @@
+A reverse proxy server acts as an intermediary between clients and backend servers, providing benefits such as load balancing, security, and caching for improved performance and scalability in backend development.

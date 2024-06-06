@@ -1,0 +1,187 @@
+body {
+    margin:0;
+    padding:0;
+    background-color:black;
+    }
+    section{
+    height:100%;
+    width:100%;
+      position:absolute ;  background:radial-gradient(#333,#000);
+    }
+    .leaf{
+        position:absolute ;
+        width:100%;
+        height:100%;
+        top:0;
+        left:0;
+    }
+    .leaf div{
+    position:absolute ;
+    display:block ;
+    }
+    .leaf div:nth-child(1){
+        left:20%; 
+        animation:fall 15s linear infinite ;
+        animation-delay:-2s;
+    
+    }
+    .leaf div:nth-child(2){
+        left:70%; 
+        animation:fall 15s linear infinite ;
+        animation-delay:-4s;
+    }
+    .leaf div:nth-child(3){
+        left:10%; 
+        animation:fall 20s linear infinite ;
+        animation-delay:-7s;
+        
+    }
+    .leaf div:nth-child(4){
+        left:50%; 
+       animation:fall 18s linear infinite ; 
+       animation-delay:-5s;
+    }
+    .leaf div:nth-child(5){
+        left:85%; 
+        animation:fall 14s linear infinite ;
+        animation-delay:-5s;
+    }
+    .leaf div:nth-child(6){
+        left:15%; 
+        animation:fall 16s linear infinite ;
+        animation-delay:-10s;
+    }
+    .leaf div:nth-child(7){
+        left:90%; 
+        animation:fall 15s linear infinite ;
+        animation-delay:-4s;
+    }
+    
+    @keyframes fall{
+        0%{
+            opacity:1;
+            top:-10%;
+            transform:translateX (20px) rotate(0deg);
+        }
+        20%{
+            opacity:0.8;
+            transform:translateX (-20px) rotate(45deg);
+        }
+        40%{
+    
+            transform:translateX (-20px) rotate(90deg);
+        }
+        60%{
+            
+           transform:translateX (-20px) rotate(135deg); 
+        }
+        80%{
+        
+            transform:translateX (-20px) rotate(180deg);
+        }
+        100%{
+            
+            top:110%;
+            transform:translateX (-20px) rotate(225deg);
+        }
+        }
+    .leaf1{
+        transform: rotateX(180deg);
+    }
+
+    span{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90%;
+        max-width: 800px;
+        font-size: 2rem;
+        text-align: center;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    /* Import the Poppins font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+h2 {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 800px;
+    font-size: 42px; /* Increased font size */
+    text-align: center;
+    color: #fff;
+    font-family: 'Poppins', sans-serif; /* Changed font to Poppins */
+    /* text-transform: uppercase; */
+    z-index: 10;
+    padding: 40px;
+    background: linear-gradient(135deg, #1a1a1a 0%, #333333 100%);
+    border-radius: 2px;
+    animation: slideIn 2s forwards;
+}
+
+/* Add the white glow effect using ::after pseudo-element */
+h2::after {
+    content: '';
+    position: absolute;
+    top: -20px; /* Adjust as needed */
+    left: -20px; /* Adjust as needed */
+    right: -20px; /* Adjust as needed */
+    bottom: -20px; /* Adjust as needed */
+    z-index: -1;
+    border-radius: 5px;
+    box-shadow: 0 0 50px rgba(255, 255, 255, 0.5); /* Add white glow */
+}
+
+/* Add hover effect */
+h2:hover::after {
+    box-shadow: 0 0 100px rgba(255, 255, 255, 0.5); /* Increase glow on hover */
+}
+
+/* Add animation keyframes */
+@keyframes slideIn {
+    0% {
+        transform: translate(-50%, -100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+/* Add hover animation keyframes */
+@keyframes bounce {
+    0% {
+        transform: translate(-50%, -50%);
+    }
+    50% {
+        transform: translate(-50%, -45%);
+    }
+    100% {
+        transform: translate(-50%, -50%);
+    }
+}
+
+    
+    
+    
+
+    /* .header-text {
+        text-align: center;
+        color: black;
+        font-size: 35px; /* Increased font size */
+        /* margin-top: 26px; */
+        /* margin-left: 20px; */
+        /* text-shadow: 2px 2px 10px rgba(0, 0, 128, 0.5); */
+        
+        /* Darker blue shadow */
+        /* border: 1px solid white; Added black border */
+        /* padding: 20px; Added padding for spacing */
+        /* display: inline-block; Ensures the border wraps around the text */
+        /* transition: text-shadow 0.3s ease; Adding transition for text-shadow */
+    /* } */ 

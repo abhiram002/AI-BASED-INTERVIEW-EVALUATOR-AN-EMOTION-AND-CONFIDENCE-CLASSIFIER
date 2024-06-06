@@ -1,0 +1,1 @@
+Synchronous programming executes tasks sequentially, blocking further execution until each task is complete, while asynchronous programming allows tasks to run independently, improving performance for tasks like I/O operations in backend development.

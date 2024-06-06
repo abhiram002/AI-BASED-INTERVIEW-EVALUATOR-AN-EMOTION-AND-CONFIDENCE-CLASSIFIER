@@ -1,0 +1,1 @@
+Reinforcement learning is a type of machine learning in which an AI agent learns to make decisions by interacting with an environment and receiving rewards or penalties based on its actions. The agent aims to maximize its cumulative reward over time.

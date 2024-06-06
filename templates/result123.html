@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interview Process Result</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'css/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename= 'css/bootstrap.css')}}">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    
+    <style>
+        .loader {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: row;
+        }
+        /* .loader-container {
+            display: none;
+            position: fixed;
+            transform: translate(-50%, -50%);
+        } */
+
+
+        .slider {
+            overflow: hidden;
+            background-color: white;
+            margin: 0 15px;
+            height: 85px;
+            width: 16px;
+            border-radius: 15px;
+            box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1), -15px -15px 30px #fff,
+                inset -5px -5px 10px rgba(0, 0, 255, 0.1),
+                inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+            transform: translateY(-7px);
+        }
+
+        .slider::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            border-radius: 100%;
+            box-shadow: inset 0px 0px 0px rgba(0, 0, 0, 0.3), 0px 420px 0 400px #FF6B6B,
+                inset 0px 0px 0px rgba(0, 0, 0, 0.1);
+            animation: animate-2 2s ease-in-out infinite;
+            animation-delay: calc(-1s * var(--i));
+        }
+
+        @keyframes animate-2 {
+            0% {
+                transform: translateY(60px);
+                filter: hue-rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(60px);
+                filter: hue-rotate(360deg);
+            }
+        }
+
+        /* Hide content initially */
+        #content {
+            display: none;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url('https://wallpaperplay.com/walls/full/d/2/f/58025.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 20px;
+            box-shadow: #0605057d;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #333;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            transition: background-color 0.3s;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .result-box {
+            background-color: #f2f2f2;
+            border-radius: 5px;
+            padding: 20px;
+            margin-left: 2%;
+            margin-bottom: 20px;
+            width: 96%;
+            
+            transition: box-shadow 0.3s;
+        }
+
+        .result-box:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+        }
+
+        .chart-container {
+            margin-top: 20px;
+        }
+
+        .max-emotion-box {
+            background-color: #81e4f5a4;
+            color: rgb(0, 0, 0);
+            border-radius: 5px;
+            padding: 10px;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+            box-shadow: #0605057d;
+        }
+
+        .max-emotion-box:hover {
+            transform: scale(1.05);
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in-up {
+            animation: fadeInUp 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        (function (w, d, s, o, f, js, fjs) {
+          w["botsonic_widget"] = o;
+          w[o] =
+            w[o] ||
+            function () {
+              (w[o].q = w[o].q || []).push(arguments);
+            };
+          (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+          js.id = o;
+          js.src = f;
+          js.async = 1;
+          fjs.parentNode.insertBefore(js, fjs);
+        })(window, document, "script", "Botsonic", "https://widget.writesonic.com/CDN/botsonic.min.js");
+        Botsonic("init", {
+          serviceBaseUrl: "https://api-azure.botsonic.ai",
+          token: "80b8ad02-f89c-4391-bba9-46939eb39966",
+        });
+      </script>
+
+
+<div class="topnav">
+    <a href="/">Home</a>
+    <a href="/info1" class="active">ChatBot</a>
+    <a href="suggestion" style="float: right;">Suggestion</a>
+    <a href="/formpage" style="float: right;">Logout</a>
+    <a href="/learning"style="float: right;">Learning</a>
+    <a href="/history"style="float: right;">History</a>
+</div>
+
+<div class="container">
+    <div class=" row">
+        <div class="result-box fade-in-up">
+            <h1 class="text-center" style="color: #1bade7;"><b>Interview Process Result</b></h1>
+            <div class="text-center">
+                <h3>Detection Completed</h3>
+                <div class="max-emotion-box">
+                    <h4>Max Emotion Label</h4>
+                    <p><b>{{ max_emotion_label }}</b></p>
+                    <h4>Max Emotion Count</h4>
+                    <p><b>{{ max_emotion_count }}</b></p>
+                </div>
+                
+                <div style="padding:30px; background-color:rgb(201, 240, 241);">
+                    
+                        <audio controls>
+                            <source src="/static/audiofolder/question_1.wav" type="audio/wav">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <center><div style="color:#333; background-color: rgba(155, 216, 228, 0.806); width:fit-content; align-items: center;"><h4> {{ similarity[0]}}</h4></div></center>
+
+                </div>
+                <div style="padding:30px; background-color:rgb(201, 240, 241);">
+                    
+                    <audio controls>
+                        <source src="/static/audiofolder/question_2.wav" type="audio/wav">
+                        Your browser does not support the audio element.
+                    </audio>
+                    <center><div style="color:#333; background-color: rgba(155, 216, 228, 0.806); width:fit-content; align-items: center;"><h4> {{ similarity[1]}}</h4></div></center>
+
+            </div>
+            <div style="padding:30px; background-color:rgb(201, 240, 241);">
+                    
+                <audio controls>
+                    <source src="/static/audiofolder/question_3.wav" type="audio/wav">
+                    Your browser does not support the audio element.
+                </audio>
+                <center><div style="color:#333; background-color: rgba(155, 216, 228, 0.806); width:fit-content; align-items: center;"><h4> {{ similarity[2]}}</h4></div></center>
+
+        </div>
+
+
+
+
+
+           
+            
+                </div>
+                    
+                    <hr style="color: black; background-color: black; width: 100%;z-index: 3;height: 5px;">
+                    <center><h3>Emotion Analysis Bar Graph</h3></center>
+                    
+                    <div class="chart-container">
+                  
+                        <canvas id="emotionChart"></canvas>
+                    </div>
+                    <hr style="height: 5px;background-color: black;">
+
+
+                    
+
+
+
+
+
+                <button onclick="includeHTML();" ><a>Audio Result</a></button>
+                <center><h4>Audio Analysis Output</h4></center>
+            
+                <Script>document.addEventListener("DOMContentLoaded", function() {
+    includeHTML();
+});</Script>
+
+
+
+
+
+                <div class="audio">
+ <div class="loader-container">
+                            <section class="loader">
+                              <div class="slider" style="--i: 0"></div>
+                              <div class="slider" style="--i: 1"></div>
+                              <div class="slider" style="--i: 2"></div>
+                              <div class="slider" style="--i: 3"></div>
+                            </section>
+                          </div>
+                    <div id="includedContent" >
+                       
+                        <!-- Content from other HTML file will be loaded here -->
+                    </div>
+
+                    <hr style="color: black; background-color: black; width: 100%;z-index: 3;height: 5px;">
+                    <center><h3>Over all confidence analysis line Graph</h3></center>
+                    
+                    <p id="all_confi" style="color: #1bade7;">[{{all_confidence}}]</p>
+        <div class="chart-container1" >
+                  
+          <canvas id="confidence_graph" width="600px"></canvas>
+      </div>
+
+                </div>
+            </div>
+
+           
+            
+            <script>
+function includeHTML() {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', '/load_content', true);
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState == 4 && xhr.status == 200) {
+                var response = JSON.parse(xhr.responseText);
+                document.getElementById('includedContent').innerHTML = response.content;
+                document.getElementById('all_confi').innerHTML = response.all_confidence;
+                setTimeout(function() {
+                    document.querySelector('.loader').style.display = 'none';
+                    document.querySelector('#content').style.display = 'block';
+                  
+                    var ctx1 = document.getElementById('confidence_graph').getContext('2d');
+                    var allConfidenceData = JSON.parse(response.all_confidence);
+                    var myChart1 = new Chart(ctx1, {
+                        type: 'line',
+                        data: {
+                            labels: ['Q1', 'Q2', 'Q3'],
+                            datasets: [{
+                                label: 'Confidence Graph',
+                                data: allConfidenceData,
+                                backgroundColor: 'rgb(75, 192, 192)',
+                                borderColor: 'rgba(75, 192, 192, 1)',
+                                borderWidth: 1
+                            }]
+                        },
+                        options: {
+                            scales: {
+                                y: {
+                                    beginAtZero: true
+                                }
+                            }
+                        }
+                    });
+                }, 0);
+            }
+        };
+        xhr.send();
+    }
+            </script>
+            
+
+
+
+
+
+            </div>
+                
+        </div>
+    </div>
+    
+
+</div>
+<script>
+   
+
+
+
+    var ctx = document.getElementById('emotionChart').getContext('2d');
+
+    var myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: {{ emotions|tojson }},
+            datasets: [{
+                label: 'Emotion Count',
+                data: {{ counts|tojson }},
+                backgroundColor: 'rgb(75, 192, 192)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+
+
+
+
+
+</script>
+
+
+   
+   
+</div>
+</body>
+</html>

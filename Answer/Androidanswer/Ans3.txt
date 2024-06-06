@@ -1,0 +1,1 @@
+AsyncTask in Android development is used to perform background operations and publish results on the UI thread without having to manipulate threads and handlers manually. It is commonly used for tasks like network operations or database queries that should not block the main UI thread.

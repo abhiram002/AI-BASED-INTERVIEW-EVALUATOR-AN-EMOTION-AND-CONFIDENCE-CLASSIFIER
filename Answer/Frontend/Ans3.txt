@@ -1,0 +1,1 @@
+The @media query in CSS is used to apply different styles based on the device or viewport characteristics, enabling responsive web design.

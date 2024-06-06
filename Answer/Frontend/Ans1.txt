@@ -1,0 +1,1 @@
+Double equal to is used for loose equality comparison in JavaScript, where the operands are converted to the same type before comparison. while triple equal to is used for strict equality comparison, which also checks the data type.

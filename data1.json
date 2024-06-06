@@ -1,0 +1,207 @@
+{"intents": [
+        {"tag": "Nervousness",
+         "patterns": ["I'm nervous about the interview. How can I calm my nervousness?"],
+         "responses": ["Practice deep breathing exercises and visualize a successful interview. Remember to focus on your qualifications and preparation."],
+         "context_set": ""
+        },
+
+        {"tag": "Confidence",
+         "patterns": ["I'm feeling confident about the interview. How can  I maintain  this confidence?"],
+         "responses": ["Continue to review your qualifications and achievements. Stay positive and trust in your abilities."],
+         "context_set": ""
+        },
+
+        {"tag": "Excitement",
+         "patterns": ["I'm excited about the interview. How can I channel this energy effectively?"],
+         "responses": ["Use your excitement to fuel your preparation. Research the company thoroughly and be enthusiastic during the interview."],
+         "context_set": ""
+        },
+
+        {"tag": "Anxiety",
+         "patterns": ["I'm anxious about the interview. How can I manage my anxiety?"],
+         "responses": ["Practice mindfulness techniques and focus on the present moment. Prepare thoroughly to build your confidence."],
+         "context_set": ""
+        },
+
+        {"tag": "Doubt",
+         "patterns": ["I'm doubting my abilities for this interview. How can I overcome this doubt?"],
+         "responses": ["Reflect on your past successes and remind yourself of your strengths. Prepare well to feel more confident."],
+         "context_set": ""
+        },
+
+        {"tag": "Anticipation",
+         "patterns": ["I'm eagerly anticipating the interview. How can I ensure I perform well?"],
+         "responses": ["Channel your anticipation into positive energy. Use it to motivate yourself to prepare thoroughly."],
+         "context_set": ""
+        },
+
+        {"tag": "Overwhelm",
+         "patterns": ["I'm feeling overwhelmed by the interview process. How can I manage this feeling?"],
+         "responses": ["Break down the interview preparation into smaller tasks. Focus on one step at a time to avoid feeling overwhelmed."],
+         "context_set": ""
+        },
+
+        {"tag": "Boredom",
+         "patterns": ["I'm feeling bored with the interview process. How can I stay engaged?"],
+         "responses": ["Find aspects of the interview that interest you and focus on them. Stay engaged by asking questions and actively listening."],
+         "context_set": ""
+        },
+
+        {"tag": "Insecurity",
+         "patterns": ["I'm feeling insecure about my qualifications. How can I boost my confidence?"],
+         "responses": ["Focus on your skills and experiences that make you a strong candidate. Prepare examples to showcase your qualifications."],
+         "context_set": ""
+        },
+
+        {"tag": "Distraction",
+         "patterns": ["I'm getting easily distracted during the interview. How can I stay focused?"],
+         "responses": ["Practice active listening and maintain eye contact with the interviewer. Take notes to stay engaged and avoid distractions."],
+         "context_set": ""
+        },
+
+
+        {"tag": "Eagerness",
+         "patterns": ["I'm eager to impress during the interview. How can I ensure I make a positive impression?"],
+         "responses": ["Show enthusiasm for the role and company. Be well-prepared and showcase your qualifications confidently."],
+         "context_set": ""
+        },
+
+        {"tag": "Frustration",
+         "patterns": ["I'm feeling frustrated with the interview process. How can I manage this frustration?"],
+         "responses": ["Focus on what you can control, such as your preparation and attitude. Stay positive and maintain a professional demeanor."],
+         "context_set": ""
+        },
+
+        {"tag": "Impatience",
+         "patterns": ["I'm feeling impatient waiting for the interview. How can I stay patient and focused?"],
+         "responses": ["Use the waiting time to review your notes and practice your responses. Stay positive and visualize a successful interview."],
+         "context_set": ""
+        },
+
+        {"tag": "Optimism",
+         "patterns": ["I'm optimistic about the interview. How can I maintain this optimism throughout the process?"],
+         "responses": ["Focus on the opportunities the interview presents. Stay positive and visualize a successful outcome."],
+         "context_set": ""
+        },
+
+        {"tag": "Pessimism",
+         "patterns": ["I'm feeling pessimistic about the interview. How can I turn this around?"],
+         "responses": ["Challenge negative thoughts and focus on your strengths. Prepare thoroughly to build your confidence."],
+         "context_set": ""
+        },
+
+        {"tag": "Stress",
+         "patterns": ["I'm feeling stressed about the interview. How can I manage this stress?"],
+         "responses": ["Practice stress-relief techniques such as meditation or exercise. Prepare well to feel more confident and in control."],
+         "context_set": ""
+        },
+
+        {"tag": "Enthusiasm",
+         "patterns": ["I'm enthusiastic about the interview. How can I ensure I convey this enthusiasm effectively?"],
+         "responses": ["Express your enthusiasm through your body language and tone of voice. Be positive and engaging during the interview."],
+         "context_set": ""
+        },
+
+        {"tag": "Resilience",
+         "patterns": ["I'm feeling resilient and ready for the interview. How can I maintain this mindset?"],
+         "responses": ["Stay focused on your goals and remain adaptable. Trust in your abilities and stay positive throughout the process."],
+         "context_set": ""
+        },
+
+        {"tag": "Motivation",
+         "patterns": ["I'm motivated to do well in the interview. How can I keep this motivation high?"],
+         "responses": ["Set specific goals for the interview and visualize your success. Stay motivated by focusing on the opportunity ahead."],
+         "context_set": ""
+        },
+
+        {"tag": "Preparedness",
+         "patterns": ["I'm well-prepared for the interview. How can I ensure I showcase this preparedness?"],
+         "responses": ["Demonstrate your preparedness through your knowledge of the company and role. Be ready to discuss your qualifications confidently."],
+         "context_set": ""
+        },
+
+        {"tag": "Excitement",
+         "patterns": ["I'm feeling really excited about this interview. How can I ensure I don't come across as overly enthusiastic?"],
+         "responses": ["It's great to be excited! Just remember to maintain a professional demeanor and focus on showcasing your qualifications."],
+         "context_set": ""
+        },
+
+        {"tag": "Overconfidence",
+         "patterns": ["I'm feeling very confident about the interview. How can I make sure I don't come across as arrogant?"],
+         "responses": ["Confidence is good, but it's important to also show humility and a willingness to learn. Focus on your qualifications and how they align with the role."],
+         "context_set": ""
+        },
+
+        {"tag": "Anger",
+         "patterns": ["I'm feeling angry about a past job experience. How can I prevent this from affecting my interview?"],
+         "responses": ["It's important to remain calm and composed during the interview. Focus on the positive aspects of your past experiences and how they've helped you grow."],
+         "context_set": ""
+        },
+
+        {"tag": "Sadness",
+         "patterns": ["I'm feeling sad due to personal reasons, and it's affecting my focus. How can I manage this during the interview?"],
+         "responses": ["It's important to acknowledge your feelings, but try to focus on the interview at hand. Take deep breaths and think positively about your qualifications and the opportunity ahead."],
+         "context_set": ""
+        },
+
+        {"tag": "React.js",
+         "patterns": ["What is React.js and why is it used?"],
+         "responses": ["React.js is a JavaScript library for building user interfaces. It is used for creating dynamic and interactive UIs for web and mobile applications."],
+         "context_set": ""
+        },
+
+        {"tag": "JSX",
+         "patterns": ["What is JSX and how is it different from HTML?"],
+         "responses": ["JSX is a syntax extension for JavaScript that allows you to write HTML-like code in React. It is similar to HTML but allows you to use JavaScript expressions within the markup."],
+         "context_set": ""
+        },
+
+        {"tag": "DOM ",
+         "patterns": ["What is the virtual DOM in React.js?"],
+         "responses": ["The virtual DOM is a lightweight copy of the real DOM. React uses the virtual DOM to improve performance by minimizing the number of changes that need to be made to the real DOM"],
+         "context_set": ""
+        },
+
+        {"tag": "state ",
+         "patterns": ["What is state in React.js?"],
+         "responses": ["State in React.js is an object that represents the current state of a component. It can be used to store and manage data that can change over time."],
+         "context_set": ""
+        },
+
+        {"tag": "HTML",
+         "patterns": ["What is HTML and what is its role in web development?"],
+         "responses": ["HTML (Hypertext Markup Language) is the standard markup language used to create web pages. It defines the structure and content of a web page."],
+         "context_set": ""
+        },
+
+        {"tag": "building blocks",
+         "patterns": ["What are the basic building blocks of an HTML document?"],
+         "responses": ["The basic building blocks of an HTML document are elements, which are defined by tags. Tags are used to mark up content such as text, images, and links."],
+         "context_set": ""
+        },
+
+        {"tag": "hyperlink in HTML",
+         "patterns": ["How do you create a hyperlink in HTML?"],
+         "responses": ["You can create a hyperlink in HTML using the <a> tag, with the href attribute specifying the URL of the link"],
+         "context_set": ""
+        },
+
+        {"tag": "div tag ",
+         "patterns": ["What is the purpose of the <div> tag in HTML?"],
+         "responses": ["The <div> tag is used to group together and style blocks of content in an HTML document. It is a generic container element."],
+         "context_set": ""
+        },
+
+        {"tag": "list in HTML",
+         "patterns": ["How do you create a list in HTML?"],
+         "responses": ["You can create an unordered list using the <ul> tag and list items using the <li> tag. For ordered lists, use the <ol> tag."],
+         "context_set": ""
+        },
+
+        {"tag": "CSS",
+         "patterns": ["What is CSS and what is its role in web development?"],
+         "responses": ["CSS (Cascading Style Sheets) is a style sheet language used to style the visual presentation of a web page. It is used to control the layout, colors, fonts, and other visual aspects of a web page."],
+         "context_set": ""
+        }
+   ]
+}

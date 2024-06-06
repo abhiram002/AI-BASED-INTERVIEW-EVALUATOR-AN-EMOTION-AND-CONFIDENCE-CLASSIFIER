@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>INTERVIEW PROCESS</title>
+  <!--  <link rel="stylesheet" type="text/css" href="{{url_for('static',filename='css/style1.css')}}">-->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+    <style>
+
+
+    .row.content {height: 550px}
+
+    .sidenav {
+      background-color: #f1f1f1a2;
+      height: 111%;
+      padding: 15px
+        }
+
+      a.more-link{ background-color: #000000;
+         color: white;
+         padding: 14px 25px;
+         text-align: center;
+         text-decoration: none;
+         display: inline-block;
+        }
+
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid #2c4b00;
+  padding: 10px;
+}
+
+body {font-family: Arial, Helvetica, sans-serif;
+background-image:url(https://wallpaperplay.com/walls/full/d/2/f/58025.jpg);
+background-repeat : no-repeat;
+background-size : cover;
+}
+* {box-sizing: border-box}
+
+input[type=text], input[type=email], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #b9b4b4;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+ signin{
+  background-color: #ffffff;
+  text-align: center;
+}
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 20px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #ffffff;
+  color: white;
+  border-radius: 10px;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000000;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4961ce;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #003903;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #ffffff00;
+  padding: 20px;
+}
+</style>
+
+</head>
+
+
+    <body>
+
+    <div class="topnav" style="height: 50px;">
+
+        <a href="/" style="border-color: #ffffff;">Home</a>
+         
+        <a href="/mainpage" class="active" style="background-color: #958a8a00;">Go to Main Page</a>
+        <a href="/learning"style="float: right;">Learning</a>
+         <a href="/formpage" style="float: right;">Logout</a>
+
+    </div>
+
+
+
+
+ <P style="font-family: monospace;text-align: center; margin-top: 15px;font-size: larger;">CHOOSE DOMAIN</P>
+<!-- 1st form -->
+<form style="display: grid; align-items: center;text-align: center; width: 220px;margin-left: 42%;" id="interviewForm" action="/info" method="POST" style="margin-top: 20px;">
+  <select id="interviewSelect" onchange="updateHiddenInputs()">
+    <option value="1" data-name="python">Python </option>
+    <option value="2" data-name="ML">Machine Learning</option>
+    <option value="3" data-name="AI">Artificial Intelligence </option>
+    <option value="4" data-name="FRONTEND">Frontend Web Developemnt</option>
+    <option value="5" data-name="BACKEND">Backend Web Developemnt</option>
+    <option value="6" data-name="ANDROID">Android app Developemnt</option>
+
+
+    <!-- Add more options as needed -->
+  </select>
+  <input type="hidden" id="selectedValue" name="selectedValue">
+  <input type="hidden" id="selectedName" name="selectedName">
+  <input type="submit" style="width: fit-content; margin-left: 33%; border-radius: 10px;" value="Start">
+</form>
+
+<script>
+function updateHiddenInputs() {
+  var select = document.getElementById("interviewSelect");
+  var selectedValue = select.options[select.selectedIndex].value;
+  var selectedName = select.options[select.selectedIndex].getAttribute("data-name");
+  document.getElementById("selectedValue").value = selectedValue;
+  document.getElementById("selectedName").value = selectedName;
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+
+<style>
+  @charset "UTF-8";
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@800&display=swap");
+  :root {
+    --font-size: 0.8em;
+    --bg1: #f5f8f7;
+    --blue: #3498db;
+    --green: #2ecc71;
+    --purple: #9b59b6;
+    --gold: #f1c40f;
+    --red: #e74c3c;
+    --orange: #e67e22;
+    --shadow1: 0 2px 4px #00000026, 0 3px 6px #0000001f;
+    --shadow2: 0 2px 6px #00000044, 0 4px 7px #00000022;
+  }
+
+  main {
+    padding: 2vw;
+  }
+
+  ul.infoGraphic {
+    font-size: var(--font-size);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  ul.infoGraphic li {
+    position: relative;
+    width: 100%;
+    max-width: 25em;
+    background: var(--bg1);
+    border-radius: 0.5em;
+    padding: 0.5em;
+    z-index: 1;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  ul.infoGraphic li .numberWrap {
+    position: absolute;
+  }
+  ul.infoGraphic li .number {
+    font-family: "maven pro", sans-serif;
+    font-size: 13em;
+    font-weight: 900;
+    width: 0.9em;
+    text-align: center;
+  }
+  ul.infoGraphic li .number.fontColor1 {
+    color: var(--blue);
+  }
+  ul.infoGraphic li .number.fontColor2 {
+    color: var(--green);
+  }
+  ul.infoGraphic li .number.fontColor3 {
+    color: var(--purple);
+  }
+  ul.infoGraphic li .number.fontColor4 {
+    color: var(--gold);
+  }
+  ul.infoGraphic li .number.fontColor5 {
+    color: var(--red);
+  }
+  ul.infoGraphic li .number.fontColor6 {
+    color: var(--orange);
+  }
+  ul.infoGraphic li .coverWrap {
+    transform: rotate(130deg);
+    position: absolute;
+    width: 18em;
+    height: 15em;
+    left: -3em;
+    top: -1em;
+  }
+  ul.infoGraphic li .coverWrap .numberCover {
+    position: absolute;
+    background: var(--bg1);
+    width: 18em;
+    height: 6em;
+    border-radius: 50% 50% 0 0;
+    border-bottom: 3px solid #ffffff;
+    transition: all 0.4s;
+  }
+  ul.infoGraphic li .coverWrap .numberCover::before {
+    position: absolute;
+    content: "";
+    bottom: 5px;
+    left: 4em;
+    right: 4em;
+    top: 5em;
+    box-shadow: 0 0 30px 17px #486785c0;
+    border-radius: 100px/10px;
+    z-index: -1;
+  }
+  ul.infoGraphic li .coverWrap .numberCover::after {
+    position: absolute;
+    bottom: 0;
+    content: "";
+    left: -10%;
+    width: 120%;
+    height: 150%;
+    background: radial-gradient(at bottom, #48668533, transparent, transparent);
+    z-index: 1;
+  }
+  ul.infoGraphic li .content {
+    margin: 8em 3em 1em 7em;
+    position: relative;
+  }
+  ul.infoGraphic li .content h2 {
+    font-size: 1.7em;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  ul.infoGraphic li .content p {
+    line-height: 1.5em;
+  }
+
+  ul.infoGraphic li:hover .coverWrap .numberCover {
+    border-radius: 100%;
+  }
+
+  .icon {
+    position: absolute;
+    font-size: 2rem;
+    text-align: center;
+    top: -1.3em;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+  .icon:before {
+    color: #666;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+  }
+
+  .iconCodepen:before {
+    content: "";
+  }
+
+  .iconSocial:before {
+    content: "";
+  }
+
+  .iconAirplane:before {
+    content: "";
+  }
+
+  .iconMap:before {
+    content: "";
+  }
+
+  .iconBulb:before {
+    content: "";
+  }
+
+  .iconPeace:before {
+    content: "";
+  }
+
+  html {
+    height: 100%;
+    box-sizing: border-box;
+  }
+
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+  .maindiv {
+    font-family: "Poppins", sans-serif;
+    background: var(--bg1);
+    min-height: 100vh;
+    color: #444;
+    display: grid;
+    place-items: center;
+    padding: 3rem 1rem 10em;
+  }
+
+  .controls {
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    padding: 0.5rem 2em;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border: 1px solid #0000004d;
+  }
+
+  .sliderBox {
+    text-align: center;
+  }
+  .sliderBox .range-value {
+    font-weight: 500;
+    font-size: 22px;
+  }
+
+  input[type=range] {
+    width: 100%;
+    margin: 1em 0;
+    -webkit-appearance: none;
+  }
+
+  input[type=range]:focus {
+    outline: none;
+  }
+
+  input[type=range]::-webkit-slider-runnable-track {
+    background: #00000066;
+    border: 0;
+    border-radius: 1.3px;
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+  }
+
+  input[type=range]::-webkit-slider-thumb {
+    margin-top: -10px;
+    width: 20px;
+    height: 20px;
+    background: #fcfcfc;
+    box-shadow: inset 0px 1px 1px #ffffff66, 0px 1px 3px black;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 50px;
+    cursor: pointer;
+    -webkit-appearance: none;
+  }
+
+  input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #ffffff;
+  }
+
+  input[type=range]::-moz-range-track {
+    background: #000;
+    border: 0;
+    border-radius: 1.3px;
+    width: 100%;
+    height: 1px;
+    cursor: pointer;
+  }
+
+  input[type=range]::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    background: #151728;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 50px;
+    cursor: pointer;
+  }
+
+  input[type=range]::-ms-track {
+    background: transparent;
+    border-color: transparent;
+    border-width: 13px 0;
+    color: transparent;
+    width: 100%;
+    height: 1px;
+    cursor: pointer;
+  }
+
+  input[type=range]::-ms-fill-lower {
+    background: #151728;
+    border: 0;
+    border-radius: 2.6px;
+  }
+
+  input[type=range]::-ms-fill-upper {
+    background: #151728;
+    border: 0;
+    border-radius: 2.6px;
+  }
+
+  input[type=range]::-ms-thumb {
+    width: 25px;
+    height: 25px;
+    background: #151728;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 0px;
+    /*Needed to keep the Edge thumb centred*/
+  }
+
+  input[type=range]:focus::-ms-fill-lower {
+    background: #ffffff;
+  }
+
+  input[type=range]:focus::-ms-fill-upper {
+    background: #ffffff;
+  }
+</style>
+</head>
+
+
+<div class="maindiv" style="margin-left: 30px; background-color: #ffffff;">
+<!-- partial:index.partial.html -->
+<main style="background-color: #ffffff;">
+  <ul class="infoGraphic" style="background-color: #ffffff;"> 
+    <li style="background-color: #ffffff;">
+      <div class="numberWrap" style="background-color: #ffffff;">
+        <div class="number fontColor1">1</div>
+        <div class="coverWrap">
+          <div class="numberCover"></div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="icon iconCodepen"></div>
+        <h2>Start the Interview</h2>
+        <p>Read the instructions and questions carefully</p>
+      </div>
+    </li>
+    <li style="background-color: #ffffff;">
+      <div class="numberWrap" style="background-color: #ffffff;">
+        <div class="number fontColor2">2</div>
+        <div class="coverWrap">
+          <div class="numberCover"></div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="icon iconBulb"></div>
+        <h2>Sit Straight and Face the Camera</h2>
+        <p>Maintain good posture and visibility.</p>
+      </div>
+    </li>
+    <li style="background-color: #ffffff;">
+      <div class="numberWrap" style="background-color: #ffffff;"> 
+        <div class="number  fontColor3">3</div>
+        <div class="coverWrap">
+          <div class="numberCover"></div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="icon iconAirplane"></div>
+        <h2>Answer Properly</h2>
+        <p>Respond thoughtfully and clearly</p>
+      </div>
+    </li>
+    <li style="background-color: #ffffff;">
+      <div class="numberWrap" style="background-color: #ffffff;">
+        <div class="number  fontColor4">4</div>
+        <div class="coverWrap">
+          <div class="numberCover"></div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="icon iconMap"></div>
+        <h2>Exit the Interview</h2>
+        <p>Exit the window and end the session.</p>
+      </div>
+    </li>
+    <li style="background-color: #ffffff;">
+      <div class="numberWrap" style="background-color: #ffffff;">
+        <div class="number  fontColor5">5</div>
+        <div class="coverWrap">
+          <div class="numberCover"></div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="icon iconBulb"></div>
+        <h2>Results</h2>
+        <p>Result of the interview will be displayed</p>
+      </div>
+    </li>
+ 
+  </ul>
+
+</main><main style="background-color: #ffffff;">
+  <ul class="infoGraphic" style="margin-top: -34px;margin-left: 10px;"> 
+    <li style="background-color: #ffffff;">
+      <div class="numberWrap" style="background-color: #ffffff;">
+        <div class="number fontColor1">6</div>
+        <div class="coverWrap">
+          <div class="numberCover"></div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="icon iconCodepen"></div>
+        <h2>Click Suggestion Button</h2>
+        <p>Receive feedback for improvement</p>
+      </div>
+    </li>
+   
+ 
+  </ul>
+
+</main>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+</div>
+
+
+
+    </body>
+</html>

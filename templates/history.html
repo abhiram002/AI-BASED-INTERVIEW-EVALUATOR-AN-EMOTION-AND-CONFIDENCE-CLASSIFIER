@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>History Page</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            table-layout: auto;
+            width: auto;
+            max-width: 100%;
+        }
+
+        th, td {
+            padding: 8px;
+            white-space: nowrap;
+        }
+
+        tbody tr {
+            display: table-row;
+        }
+    </style>
+</head>
+<body style="background-color:snow;">
+    <h1 style="align-items: center;text-align: center;font-family: monospace;">HISTORY</h1>
+    <div style="overflow-x: auto;">
+        <table border="3">
+            <thead>
+                <tr>
+                    <th>UUID</th>
+                    <th>Email</th>
+                    <th>Max Emotion Label</th>
+                    <th>Max Emotion Count</th>
+                    <th>Similarity of Q1</th>
+                    <th>Similarity of Q2</th>
+                    <th>Similarity of Q3</th>
+                    <th>Quiz Time</th>
+                    <th>Timestamp</th>
+                    <th>Confidence Level from Q1</th>
+                    <th>Confidence Level from Q2</th>
+                    <th>Confidence Level from Q3</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for result in results %}
+                <tr>
+                    <td>{{ result['uuid'] }}</td>
+                    <td>{{ result['email'] }}</td>
+                    <td>{{ result['max_emotion_label'] }}</td>
+                    <td>{{ result['max_emotion_count'] }}</td>
+                    <td>{{ result['similarity of Q1'] }}</td>
+                    <td>{{ result['similarity of Q2'] }}</td>
+                    <td>{{ result['similarity of Q3'] }}</td>
+                    <td>{{ result['quiz_time'] }}</td>
+                    <td>{{ result['timestamp'] }}</td>
+                    <td>{{ result['confidence level from Q1'] }}</td>
+                    <td>{{ result['confidence level from Q2'] }}</td>
+                    <td>{{ result['confidence level from Q3'] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

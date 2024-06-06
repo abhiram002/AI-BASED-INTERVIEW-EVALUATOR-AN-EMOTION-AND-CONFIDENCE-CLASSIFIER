@@ -1,0 +1,1325 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi", "Hey", "Is anyone there?","Hi there", "Hello", "Hey there", "Howdy", "Hola", "Bonjour","Hay", "Sasa", "Good Evening", "Good afternoon"],
+     "responses": ["Hello there. Tell me how are you feeling today?", "Hi there. What brings you here today?", "Hi there. How are you feeling today?", "Great to see you. How do you feel currently?", "Hello there. Glad to see you're back. What's going on in your world right now?"]
+    },
+    {"tag": "morning",
+        "patterns": ["Good morning"],
+        "responses": ["Good morning Boss","morning is always good :) brother "]
+    },
+    {"tag": "afternoon",
+        "patterns": ["Good afternoon"],
+        "responses": ["Good afternoon. How is your day going?"]
+    },
+    {"tag": "evening",
+        "patterns": ["Good evening"],
+        "responses": ["Good evening. How has your day been?"]
+    },
+    {"tag": "night",
+        "patterns": ["Good night"],
+        "responses": ["Good night. Get some proper sleep", "Good night. Sweet dreams."]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye", "Au revoir", "Sayonara", "ok bye", "Bye then", "Fare thee well"],
+     "responses": ["See you later.", "Have a nice day.", "Bye! Come back again.", "I'll see you soon."]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help", "Than you very much"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"]
+    },
+    {"tag": "no-response",
+        "patterns": [""],
+        "responses": ["Sorry, I didn't understand you.", "Please go on.", "Not sure I understand that.", "Please don't hesitate to talk to me."]
+    },
+    {"tag": "neutral-response",
+        "patterns": ["nothing much","nothing really","nothing"],
+        "responses": ["Oh I see. Do you want to talk about something?"]
+    },
+    {"tag": "about",
+     "patterns": ["Who are you?", "What are you?", "Who you are?", "Tell me more about yourself.", "What is your name?", "What should I call you?", "What's your name?", "Tell me about yourself" ],
+     "responses": ["I'm Zoro the Interview bot, your Personal  AI Assistant. How are you feeling today", "I'm Interview bot > Zoro, a  AI Assitant designed to assist you. Tell me about yourself.", "i am Zoro an Interview Bot . So how are you feeling today?", "You can call me Zoro.", "I'm Zoro an AI interview Bot!", "Call me Zoro"]
+    },
+
+    {"tag": "creation",
+        "patterns": ["Who created you?", "How were you made?", "How were you created?"],
+        "responses": ["I was created by Abhiram", "I was trained on a text dataset using Deep Learning & Natural Language Processing techniques by Abhiram"]
+    },
+   
+    {"tag": "help",
+    "patterns": ["Could you help me?", "give me a hand please", "Can you help?", "What can you do for me?", "I need support", "I need help", "Support me please"],
+    "responses": ["Sure. Tell me how can i assist you", "Tell me your problem so that i can assist you", "Yes, sure. How can I help you?"]
+    },
+    {"tag": "sad",
+    "patterns": ["I am feeling lonely", "I am so lonely", "I feel down", "I feel sad", "I am sad", "I feel so lonely", "I feel empty", "I don't have anyone"],
+    "responses": ["I'm sorry to hear that. I'm here for you. Talking about it might help. So, tell me why do you think you're feeling this way?", "I'm here for you. Could you tell me why you're feeling this way?", "Why do you think you feel this way?", "How long have you been feeling this way?"]
+    },
+    {
+        "tag": "greeting",
+        "patterns": ["Hi", "Hey", "Is anyone there?", "Hi there", "Hello", "Hey there", "Howdy", "Hola", "Bonjour", "Hay", "Sasa", "Good Evening", "Good afternoon"],
+        "responses": ["Hello there. Tell me how are you feeling today?", "Hi there. What brings you here today?", "Hi there. How are you feeling today?", "Great to see you. How do you feel currently?", "Hello there. Glad to see you're back. What's going on in your world right now?"]
+        },
+        {
+        "tag": "morning",
+        "patterns": ["Good morning"],
+        "responses": ["Good morning Boss", "morning is always good  :) bother"]
+        },
+        {
+        "tag": "afternoon",
+        "patterns": ["Good afternoon"],
+        "responses": ["Good afternoon. How is your day going?"]
+        },
+        {
+        "tag": "evening",
+        "patterns": ["Good evening"],
+        "responses": ["Good evening. How has your day been?"]
+        },
+        {
+        "tag": "night",
+        "patterns": ["Good night"],
+        "responses": ["Good night. Get some proper sleep", "Good night. Sweet dreams."]
+        },
+        {
+        "tag": "goodbye",
+        "patterns": ["Bye", "See you later", "Goodbye", "Au revoir", "Sayonara", "ok bye", "Bye then", "Fare thee well"],
+        "responses": ["See you later.", "Have a nice day.", "Bye! Come back again.", "I'll see you soon."]
+        },
+        {
+        "tag": "thanks",
+        "patterns": ["Thanks", "Thank you", "That's helpful", "Thanks for the help", "Than you very much"],
+        "responses": ["Happy to help!", "Any time!", "My pleasure", "You're most welcome!"]
+        },
+
+        {
+            "tag": "interview_suggestions",
+            "patterns": [
+            "Do you have any suggestions that may help me in the interview?",
+            "Any tips for the interview that could be helpful?",
+            "Can you suggest anything that might improve my interview performance?"
+            ],
+            "responses": [
+            "One suggestion is to research the company thoroughly before the interview. Knowing about their values, goals, and culture can help you tailor your answers to align with what they are looking for.",
+            "Practice answering common interview questions aloud. This can help you feel more confident and prepared during the actual interview.",
+            "Consider doing a mock interview with a friend or family member. This can help you practice your responses and get feedback on areas for improvement.",
+            "Make sure to dress professionally for the interview. Your appearance can make a big impact on the first impression you make."
+            ]
+            },     
+{
+    "tag": "suggestion",
+    "patterns": [
+    "Do you have any suggestions that may help me in the interview?",
+    "Any tips for the interview that could be helpful?",
+    "Can you suggest anything that might improve my interview performance?"
+    ],
+    "responses": [
+    "One suggestion is to research the company thoroughly before the interview. Knowing about their values, goals, and culture can help you tailor your answers to align with what they are looking for.",
+    "Practice answering common interview questions aloud. This can help you feel more confident and prepared during the actual interview.",
+    "Consider doing a mock interview with a friend or family member. This can help you practice your responses and get feedback on areas for improvement.",
+    "Make sure to dress professionally for the interview. Your appearance can make a big impact on the first impression you make."
+    ]
+    },
+
+        {
+        "tag": "nervousness",
+        "patterns": [
+        "I'm nervous about the interview. How can I calm my nervousness?",
+        "how to avoid nervousness",
+        "Give suggestions to overcome nervousness"
+        ],
+        "responses": [
+        "Practice deep breathing exercises and visualize a successful interview. Remember to focus on your qualifications and preparation.",
+        "Try practicing mindfulness or meditation to calm your nerves. Focus on the present moment and your ability to perform well.",
+        "Exercise can be a great way to reduce nervousness. Take a walk or do some light stretching to release tension.",
+        "Listening to calming music or engaging in a relaxing activity before the interview can help ease nervousness.",
+        "Prepare thoroughly for the interview to build your confidence. Knowing you're well-prepared can help reduce nervousness."
+        ]
+        },
+    
+        {
+        "tag": "confidence",
+        "patterns": [
+        "I'm feeling confident about the interview. How can I maintain this confidence?",
+        "suggestions to be confident",
+        "suggestions to be confident in interviews"
+        ],
+        "responses": [
+        "Continue to review your qualifications and achievements. Stay positive and trust in your abilities.",
+        "Remind yourself of your past successes and the reasons you're qualified for the position. Trust in your preparation.",
+        "Visualize yourself succeeding in the interview. Confidence often comes from envisioning a positive outcome.",
+        "Focus on the present moment and your ability to handle the interview questions. Confidence comes from being prepared.",
+        "Take a moment to reflect on your skills and experiences that make you a strong candidate. This can help maintain your confidence."
+        ]
+        },
+        {
+        "tag": "excitement",
+        "patterns": [
+        "I'm excited about the interview. How can I channel this energy effectively?"
+        ],
+        "responses": [
+        "Use your excitement to fuel your preparation. Research the company thoroughly and be enthusiastic during the interview.",
+        "Channel your excitement into positive energy. Use it as motivation to prepare thoroughly and showcase your enthusiasm during the interview.",
+        "Think about how the role aligns with your career goals and how the company's mission excites you. This can help channel your energy effectively.",
+        "Visualize yourself succeeding in the interview. Let your excitement drive you to prepare well and show your enthusiasm during the interview.",
+        "Use your excitement to ask insightful questions during the interview. This can demonstrate your enthusiasm for the role and the company."
+        ]
+        },
+        {
+        "tag": "anxiety",
+        "patterns": [
+        "I'm anxious about the interview. How can I manage my anxiety?"
+        ],
+        "responses": [
+        "Practice mindfulness techniques and focus on the present moment. Prepare thoroughly to build your confidence.",
+        "Take deep breaths and remind yourself that feeling anxious is normal. Focus on your preparation and qualifications.",
+        "Visualize a positive outcome for the interview. Positive thinking can help reduce anxiety.",
+        "Break down the interview process into smaller steps. Focus on one step at a time to avoid feeling overwhelmed.",
+        "Talk to a friend or mentor about your anxiety. Sometimes, sharing your feelings can help alleviate them."
+        ]
+        },
+        {
+        "tag": "doubt",
+        "patterns": [
+        "I'm doubting my abilities for this interview. How can I overcome this doubt?"
+        ],
+        "responses": [
+        "Reflect on your past successes and remind yourself of your strengths. Prepare well to feel more confident.",
+        "Focus on the preparation you've done for the interview. Knowing you're well-prepared can help alleviate doubt.",
+        "Talk to a friend, mentor, or career coach about your doubts. Sometimes, an outside perspective can provide reassurance.",
+        "Visualize yourself succeeding in the interview. Positive visualization can help build confidence and reduce doubt.",
+        "Take a moment to review your qualifications and achievements. Recognize your value as a candidate to boost your confidence."
+        ]
+        },
+        {
+        "tag": "anticipation",
+        "patterns": [
+        "I'm eagerly anticipating the interview. How can I ensure I perform well?"
+        ],
+        "responses": [
+        "Channel your anticipation into positive energy. Use it to motivate yourself to prepare thoroughly.",
+        "Research the company and the role extensively to show your enthusiasm and interest during the interview.",
+        "Practice answering common interview questions to ease any nerves that may arise from anticipation.",
+        "Visualize a successful interview. Imagining yourself performing well can help alleviate any anxiety.",
+        "Use your anticipation to ask insightful questions during the interview. This can demonstrate your enthusiasm and engagement."
+        ]
+        },
+        {
+        "tag": "overwhelm",
+        "patterns": [
+        "I'm feeling overwhelmed by the interview process. How can I manage this feeling?"
+        ],
+        "responses": [
+        "Break down the interview preparation into smaller tasks. Focus on one step at a time to avoid feeling overwhelmed.",
+        "Create a schedule or checklist to organize your interview preparation. This can help you stay on track and reduce overwhelm.",
+        "Talk to someone about your feelings of overwhelm. Sometimes, sharing your thoughts can help alleviate them.",
+        "Focus on the aspects of the interview that you can control, such as your preparation and mindset.",
+        "Take breaks during your interview preparation to avoid burnout. Remember to prioritize self-care."
+        ]
+        },
+        {
+        "tag": "boredom",
+        "patterns": [
+        "I'm feeling bored with the interview process. How can I stay engaged?"
+        ],
+        "responses": [
+        "Find aspects of the interview that interest you and focus on them. Stay engaged by asking questions and actively listening.",
+        "Research the company and the role in depth to discover new and interesting information.",
+        "Practice your interview responses to keep your mind engaged and focused on the task at hand.",
+        "Consider the long-term benefits of the interview, such as career growth and new opportunities, to stay motivated.",
+        "Challenge yourself to approach the interview process with a fresh perspective. Look for ways to make it more engaging for yourself."
+        ]
+        },
+        {
+        "tag": "insecurity",
+        "patterns": [
+        "I'm feeling insecure about my qualifications. How can I boost my confidence?"
+        ],
+        "responses": [
+        "Focus on your skills and experiences that make you a strong candidate. Prepare examples to showcase your qualifications.",
+        "Talk to a mentor or trusted friend about your feelings of insecurity. Sometimes, an outside perspective can provide reassurance.",
+        "Reflect on past successes and positive feedback you've received. Remind yourself of your accomplishments to boost your confidence.",
+        "Practice positive self-talk. Replace negative thoughts with affirmations about your abilities and qualifications.",
+        "Visualize yourself succeeding in the interview. Positive visualization can help build confidence and reduce insecurity."
+        ]
+        },
+        {
+        "tag": "distraction",
+        "patterns": [
+        "I'm getting easily distracted during the interview. How can I stay focused?"
+        ],
+        "responses": [
+        "Practice active listening and maintain eye contact with the interviewer. Take notes to stay engaged and avoid distractions.",
+        "Focus on the present moment and the questions being asked. Remind yourself of the importance of staying focused.",
+        "Limit distractions in your environment, such as turning off your phone or finding a quiet space for the interview.",
+        "Take deep breaths and refocus whenever you feel yourself getting distracted. Mindfulness techniques can help improve focus.",
+        "Visualize yourself succeeding in the interview. This can help you stay motivated and focused on the task at hand."
+        ]
+        },
+        {
+        "tag": "eagerness",
+        "patterns": [
+        "I'm eager to impress during the interview. How can I ensure I make a positive impression?"
+        ],
+        "responses": [
+        "Show enthusiasm for the role and company. Be well-prepared and showcase your qualifications confidently.",
+        "Research the company and the role thoroughly to demonstrate your genuine interest and enthusiasm.",
+        "Use your eagerness to ask thoughtful questions during the interview. This can demonstrate your engagement and curiosity.",
+        "Practice active listening and engage with the interviewer. Show genuine interest in the conversation to make a positive impression.",
+        "Focus on showcasing your skills and experiences that align with the job requirements. This can help you stand out as a strong candidate."
+        ]
+        },
+        {
+        "tag": "frustration",
+        "patterns": [
+        "I'm feeling frustrated with the interview process. How can I manage this frustration?"
+        ],
+        "responses": [
+        "Take a break from your interview preparation to clear your mind. Engage in a relaxing activity to reduce frustration.",
+        "Focus on the aspects of the interview that you can control, such as your preparation and mindset.",
+        "Talk to someone about your feelings of frustration. Sometimes, sharing your thoughts can help alleviate them.",
+        "Remind yourself of the long-term benefits of the interview, such as career growth and new opportunities, to stay motivated.",
+        "Practice mindfulness techniques to stay present and focused. This can help reduce frustration and improve your mood."
+        ]
+        },
+        {
+        "tag": "pressure",
+        "patterns": [
+        "I'm feeling pressure to perform well in the interview. How can I manage this pressure?"
+        ],
+        "responses": [
+        "Practice deep breathing exercises to calm your nerves. Remember, it's normal to feel pressure before an interview.",
+        "Focus on the preparation you've done for the interview. Trust in your abilities and qualifications to perform well.",
+        "Visualize a successful interview. Positive visualization can help reduce pressure and boost your confidence.",
+        "Take breaks during your interview preparation to avoid burnout. Remember to prioritize self-care.",
+        "Talk to someone about your feelings of pressure. Sometimes, sharing your thoughts can help alleviate them."
+        ]
+        },
+        {
+        "tag": "stress",
+        "patterns": [
+        "I'm feeling stressed about the interview. How can I manage this stress?"
+        ],
+        "responses": [
+        "Practice relaxation techniques, such as deep breathing or meditation, to reduce stress.",
+        "Focus on the aspects of the interview that you can control, such as your preparation and mindset.",
+        "Take breaks during your interview preparation to avoid burnout. Remember to prioritize self-care.",
+        "Talk to someone about your feelings of stress. Sometimes, sharing your thoughts can help alleviate them.",
+        "Visualize a positive outcome for the interview. Positive thinking can help reduce stress and anxiety."
+        ]
+        },
+        {
+        "tag": "preparation",
+        "patterns": [
+        "How should I prepare for the interview?"
+        ],
+        "responses": [
+        "Research the company and the role thoroughly. Understand their mission, values, and recent news.",
+        "Practice common interview questions and prepare examples from your past experiences to showcase your skills.",
+        "Dress appropriately for the interview and arrive on time. Plan your route to the interview location in advance.",
+        "Review your resume and be prepared to discuss your qualifications and experiences in detail.",
+        "Prepare thoughtful questions to ask the interviewer. This demonstrates your interest in the role and company."
+        ]
+        },
+        {
+        "tag": "introduction",
+        "patterns": [
+        "Tell me about yourself"
+        ],
+        "responses": [
+        "Start by introducing yourself and mentioning your current position or role.",
+        "Provide a brief overview of your professional background and key accomplishments.",
+        "Highlight relevant experiences and skills that make you a strong candidate for the position.",
+        "Mention your interest in the role and why you're excited about the opportunity.",
+        "Conclude with a statement about how your skills and experiences align with the company's goals."
+        ]
+        },
+        {
+        "tag": "strengths",
+        "patterns": [
+        "What are your strengths?"
+        ],
+        "responses": [
+        "I am a quick learner and adapt well to new situations.",
+        "I am a strong communicator and work well in team environments.",
+        "I am highly organized and excel at managing multiple tasks.",
+        "I am detail-oriented and strive for excellence in everything I do.",
+        "I am results-driven and consistently meet or exceed goals."
+        ]
+        },
+        {
+        "tag": "weaknesses",
+        "patterns": [
+        "What are your weaknesses?"
+        ],
+        "responses": [
+        "I sometimes have difficulty delegating tasks and prefer to ensure things are done correctly.",
+        "I can be overly critical of my own work, which can slow down my progress.",
+        "I sometimes struggle with time management and can be overly focused on perfection.",
+        "I have a tendency to take on too much work, which can sometimes lead to burnout.",
+        "I can be shy in large group settings, but I've been working on my communication skills."
+        ]
+        },
+        {
+        "tag": "teamwork",
+        "patterns": [
+        "How do you work in a team?"
+        ],
+        "responses": [
+        "I believe in open and honest communication within the team.",
+        "I try to understand each team member's strengths and weaknesses to ensure effective collaboration.",
+        "I am willing to listen to others' ideas and incorporate them into the team's work.",
+        "I am proactive in offering help to team members and support them in achieving their goals.",
+        "I believe in celebrating team successes and learning from failures together."
+        ]
+        },
+        {
+        "tag": "communication",
+        "patterns": [
+        "How do you communicate with others?"
+        ],
+        "responses": [
+        "I believe in clear and concise communication, whether it's written or verbal.",
+        "I try to actively listen to others and ask clarifying questions to ensure understanding.",
+        "I am comfortable using various communication tools, such as email, phone, and video conferencing.",
+        "I adapt my communication style based on the audience and situation to ensure effective communication.",
+        "I believe in being respectful and professional in all communications."
+        ]
+        },
+        {
+        "tag": "leadership",
+        "patterns": [
+        "Can you describe a situation where you demonstrated leadership?"
+        ],
+        "responses": [
+        "In my previous role, I led a team project from conception to completion, ensuring all deadlines were met.",
+        "I took on a leadership role in a group project, delegating tasks and ensuring everyone was on track to meet our goals.",
+        "I was selected as team leader for a challenging project, where I successfully motivated and guided the team to success.",
+        "I volunteered to lead a new initiative within the company, demonstrating my ability to take on new challenges and lead a team.",
+        "I consistently take on leadership roles in group settings, showcasing my ability to lead and inspire others."
+        ]
+        },
+        {
+        "tag": "problem-solving",
+        "patterns": [
+        "How do you approach problem-solving?"
+        ],
+        "responses": [
+        "I first identify the problem and gather all relevant information to understand its root cause.",
+        "I brainstorm possible solutions and evaluate each one based on feasibility and potential impact.",
+        "I consult with colleagues or experts to gather additional insights and perspectives.",
+        "I select the best solution and create an action plan to implement it.",
+        "I evaluate the results of the solution and make adjustments as needed to ensure its effectiveness."
+        ]
+        },
+        {
+        "tag": "motivation",
+        "patterns": [
+        "What motivates you?"
+        ],
+        "responses": [
+        "I am motivated by challenging projects that allow me to learn and grow.",
+        "I am inspired by working with a talented and dedicated team.",
+        "I am driven by the opportunity to make a meaningful impact through my work.",
+        "I am motivated by achieving goals and exceeding expectations.",
+        "I am energized by the possibility of creating innovative solutions to complex problems."
+        ]
+        },
+        {
+        "tag": "adaptability",
+        "patterns": [
+        "How do you handle change?"
+        ],
+        "responses": [
+        "I embrace change as an opportunity for growth and learning.",
+        "I am flexible and able to adapt quickly to new situations and environments.",
+        "I remain calm and focused during times of change, allowing me to effectively navigate challenges.",
+        "I communicate openly and transparently with others during times of change to ensure smooth transitions.",
+        "I seek feedback and guidance from others to help me adapt to change more effectively."
+        ]
+        },
+        {
+        "tag": "career_goals",
+        "patterns": [
+        "What are your career goals?"
+        ],
+        "responses": [
+        "I aspire to take on more leadership roles and contribute to larger projects.",
+        "I am committed to continuous learning and professional development to advance my career.",
+        "I aim to make a positive impact in my field and contribute to meaningful projects.",
+        "I strive to achieve a work-life balance that allows me to pursue both personal and professional growth.",
+        "I am motivated to explore new opportunities and challenges that align with my skills and interests."
+        ]
+        },
+        {
+        "tag": "company_knowledge",
+        "patterns": [
+        "What do you know about our company?"
+        ],
+        "responses": [
+        "I know that your company is a leader in the industry, known for its innovative products and services.",
+        "I am aware of your company's commitment to sustainability and corporate social responsibility.",
+        "I understand that your company values teamwork and collaboration, which aligns with my own work style.",
+        "I have researched your company's history and recent developments, including your expansion into new markets.",
+        "I am impressed by your company's reputation for excellence and its dedication to customer satisfaction."
+        ]
+        },
+        {
+        "tag": "salary_expectations",
+        "patterns": [
+        "What are your salary expectations?"
+        ],
+        "responses": [
+        "I am looking for a competitive salary that reflects my skills and experience.",
+        "I am open to discussing salary based on the responsibilities and expectations of the role.",
+        "I value opportunities for growth and advancement, and salary is one factor in considering a position.",
+        "I am interested in a salary that is commensurate with industry standards and reflects my contributions to the company.",
+        "I am flexible regarding salary and am more focused on finding the right opportunity for career growth and development."
+        ]
+        },
+        {
+        "tag": "work_environment",
+        "patterns": [
+        "What type of work environment do you thrive in?"
+        ],
+        "responses": [
+        "I thrive in a collaborative work environment where teamwork and communication are valued.",
+        "I enjoy working in a fast-paced environment where I can take on new challenges and learn new skills.",
+        "I prefer a work environment that promotes creativity and innovation, allowing me to contribute ideas and solutions.",
+        "I thrive in a supportive work environment where feedback is constructive and opportunities for growth are encouraged.",
+        "I excel in a work environment that values diversity and inclusion, where different perspectives are respected and valued."
+        ]
+        },
+        {
+        "tag": "questions_to_ask",
+        "patterns": [
+        "What questions should I ask in an interview?"
+        ],
+        "responses": [
+        "Ask about the company culture and what makes it unique.",
+        "Inquire about the team dynamics and how collaboration is encouraged within the organization.",
+        "Ask about opportunities for growth and advancement within the company.",
+        "Inquire about the company's long-term goals and how the role contributes to achieving them.",
+        "Ask about the expectations for the role in the first few months and how success will be measured."
+        ]
+        },
+        {
+        "tag": "follow_up",
+        "patterns": [
+        "Should I send a follow-up email after the interview?"
+        ],
+        "responses": [
+        "Yes, sending a follow-up email after the interview is a good idea. It allows you to thank the interviewer for their time and reiterate your interest in the position.",
+        "A follow-up email is a great way to express your appreciation for the opportunity to interview and to remind the interviewer of your qualifications and enthusiasm for the position.",
+        "Sending a follow-up email shows your professionalism and can help you stand out from other candidates.",
+        "A well-written follow-up email can help keep you top of mind with the interviewer and reinforce your interest in the position.",
+        "Sending a follow-up email is a courteous way to thank the interviewer for their time and to express your continued interest in the position."
+        ]
+        },
+        {
+        "tag": "interview_feedback",
+        "patterns": [
+        "How can I ask for feedback after the interview?"
+        ],
+        "responses": [
+        "Send a polite email thanking the interviewer for the opportunity to interview and expressing your continued interest in the position.",
+        "In your email, ask if they would be willing to provide feedback on your interview performance.",
+        "Be open to constructive criticism and use the feedback to improve your interview skills for future opportunities.",
+        "Express your appreciation for any feedback received, even if it is negative, and use it as a learning opportunity.",
+        "Sending a follow-up email is a professional way to ask for feedback and to show your commitment to self-improvement."
+        ]
+        },
+        {
+        "tag": "interview_preparation",
+        "patterns": [
+        "How should I prepare for a technical interview?"
+        ],
+        "responses": [
+        "Review the job description and make note of any technical skills or experience required.",
+        "Practice coding problems and technical questions relevant to the role.",
+        "Brush up on fundamental concepts and algorithms related to the position.",
+        "Be prepared to discuss your previous technical projects and experiences in detail.",
+        "Research the company's technology stack and be prepared to discuss how your skills align with their needs."
+        ]
+        },
+        {
+        "tag": "interview_attire",
+        "patterns": [
+        "What should I wear to the interview?"
+        ],
+        "responses": [
+        "Wear professional attire that is appropriate for the company culture.",
+        "Aim for a neat and polished look, avoiding overly casual or revealing clothing.",
+        "Choose clothing that fits well and is comfortable, allowing you to focus on the interview.",
+        "Avoid distracting accessories and jewelry, opting for a more understated look.",
+        "When in doubt, it's better to be slightly overdressed than underdressed for the interview."
+        ]
+        },
+        {
+        "tag": "interview_body_language",
+        "patterns": [
+        "How can I use body language to make a positive impression in the interview?"
+        ],
+        "responses": [
+        "Maintain good posture to convey confidence and professionalism.",
+        "Make eye contact with the interviewer to show interest and engagement.",
+        "Use gestures to emphasize key points, but avoid excessive or distracting movements.",
+        "Smile and nod to show that you are listening and engaged in the conversation.",
+        "Pay attention to your facial expressions, as they can convey interest, enthusiasm, and positivity."
+        ]
+        },
+        {
+        "tag": "interview_presentation",
+        "patterns": [
+        "How can I make a strong presentation during the interview?"
+        ],
+        "responses": [
+        "Practice your presentation beforehand to ensure that you are comfortable with the content.",
+        "Focus on delivering the key points clearly and concisely, avoiding jargon or overly technical language.",
+        "Use visual aids, such as slides or charts, to enhance your presentation and illustrate key points.",
+        "Engage with the audience by maintaining eye contact and using gestures to emphasize key points.",
+        "Be prepared to answer questions and provide additional information about your presentation."
+        ]
+        },
+        {
+        "tag": "interview_confidence",
+        "patterns": [
+        "How can I boost my confidence for the interview?"
+        ],
+        "responses": [
+        "Prepare thoroughly for the interview by researching the company and practicing common interview questions.",
+        "Visualize yourself succeeding in the interview and imagine the positive outcome.",
+        "Focus on your qualifications and the reasons you are a strong candidate for the position.",
+        "Practice positive self-talk and replace negative thoughts with affirmations about your abilities.",
+        "Take deep breaths and try relaxation techniques to calm your nerves before the interview."
+        ]
+        },
+        {
+        "tag": "interview_stress",
+        "patterns": [
+        "How can I manage stress during the interview?"
+        ],
+        "responses": [
+        "Practice relaxation techniques, such as deep breathing or visualization, before the interview.",
+        "Focus on the present moment and the questions being asked, rather than worrying about the outcome.",
+        "Remind yourself that it's normal to feel nervous before an interview and that you are prepared.",
+        "Take breaks during your interview preparation to avoid burnout and reduce stress.",
+        "Talk to someone about your feelings of stress and anxiety to gain perspective and support."
+        ]
+        },
+        {
+        "tag": "interview_body_language",
+        "patterns": [
+        "How can I use body language to make a positive impression in the interview?"
+        ],
+        "responses": [
+        "Maintain good posture to convey confidence and professionalism.",
+        "Make eye contact with the interviewer to show interest and engagement.",
+        "Use gestures to emphasize key points, but avoid excessive or distracting movements.",
+        "Smile and nod to show that you are listening and engaged in the conversation.",
+        "Pay attention to your facial expressions, as they can convey interest, enthusiasm, and positivity."
+        ]
+        },
+        {
+        "tag": "interview_presentation",
+        "patterns": [
+        "How can I make a strong presentation during the interview?"
+        ],
+        "responses": [
+        "Practice your presentation beforehand to ensure that you are comfortable with the content.",
+        "Focus on delivering the key points clearly and concisely, avoiding jargon or overly technical language.",
+        "Use visual aids, such as slides or charts, to enhance your presentation and illustrate key points.",
+        "Engage with the audience by maintaining eye contact and using gestures to emphasize key points.",
+        "Be prepared to answer questions and provide additional information about your presentation."
+        ]
+        },
+        {
+        "tag": "interview_confidence",
+        "patterns": [
+        "How can I boost my confidence for the interview?"
+        ],
+        "responses": [
+        "Prepare thoroughly for the interview by researching the company and practicing common interview questions.",
+        "Visualize yourself succeeding in the interview and imagine the positive outcome.",
+        "Focus on your qualifications and the reasons you are a strong candidate for the position.",
+        "Practice positive self-talk and replace negative thoughts with affirmations about your abilities.",
+        "Take deep breaths and try relaxation techniques to calm your nerves before the interview."
+        ]
+        },
+        {
+        "tag": "interview_stress",
+        "patterns": [
+        "How can I manage stress during the interview?"
+        ],
+        "responses": [
+        "Practice relaxation techniques, such as deep breathing or visualization, before the interview.",
+        "Focus on the present moment and the questions being asked, rather than worrying about the outcome.",
+        "Remind yourself that it's normal to feel nervous before an interview and that you are prepared.",
+        "Take breaks during your interview preparation to avoid burnout and reduce stress.",
+        "Talk to someone about your feelings of stress and anxiety to gain perspective and support."
+        ]
+        },
+        {
+        "tag": "interview_body_language",
+        "patterns": [
+        "How can I use body language to make a positive impression in the interview?"
+        ],
+        "responses": [
+        "Maintain good posture to convey confidence and professionalism.",
+        "Make eye contact with the interviewer to show interest and engagement.",
+        "Use gestures to emphasize key points, but avoid excessive or distracting movements.",
+        "Smile and nod to show that you are listening and engaged in the conversation.",
+        "Pay attention to your facial expressions, as they can convey interest, enthusiasm, and positivity."
+        ]
+        },
+        {
+        "tag": "interview_presentation",
+        "patterns": [
+        "How can I make a strong presentation during the interview?"
+        ],
+        "responses": [
+        "Practice your presentation beforehand to ensure that you are comfortable with the content.",
+        "Focus on delivering the key points clearly and concisely, avoiding jargon or overly technical language.",
+        "Use visual aids, such as slides or charts, to enhance your presentation and illustrate key points.",
+        "Engage with the audience by maintaining eye contact and using gestures to emphasize key points.",
+        "Be prepared to answer questions and provide additional information about your presentation."
+        ]
+        },
+        {
+        "tag": "interview_confidence",
+        "patterns": [
+        "How can I boost my confidence for the interview?"
+        ],
+        "responses": [
+        "Prepare thoroughly for the interview by researching the company and practicing common interview questions.",
+        "Visualize yourself succeeding in the interview and imagine the positive outcome.",
+        "Focus on your qualifications and the reasons you are a strong candidate for the position.",
+        "Practice positive self-talk and replace negative thoughts with affirmations about your abilities.",
+        "Take deep breaths and try relaxation techniques to calm your nerves before the interview."
+        ]
+        },
+        {
+        "tag": "interview_stress",
+        "patterns": [
+        "How can I manage stress during the interview?"
+        ],
+        "responses": [
+        "Practice relaxation techniques, such as deep breathing or visualization, before the interview.",
+        "Focus on the present moment and the questions being asked, rather than worrying about the outcome.",
+        "Remind yourself that it's normal to feel nervous before an interview and that you are prepared.",
+        "Take breaks during your interview preparation to avoid burnout and reduce stress.",
+        "Talk to someone about your feelings of stress and anxiety to gain perspective and support."
+        ]
+        },
+        {
+        "tag": "interview_follow_up",
+        "patterns": [
+        "Should I send a follow-up email after the interview?"
+        ],
+        "responses": [
+        "Yes, sending a follow-up email after the interview is a good idea. It allows you to thank the interviewer for their time and reiterate your interest in the position.",
+        "A follow-up email is a great way to express your appreciation for the opportunity to interview and to remind the interviewer of your qualifications and enthusiasm for the position.",
+        "Sending a follow-up email shows your professionalism and can help you stand out from other candidates.",
+        "A well-written follow-up email can help keep you top of mind with the interviewer and reinforce your interest in the position.",
+        "Sending a follow-up email is a courteous way to thank the interviewer for their time and to express your continued interest in the position."
+        ]
+        },
+        {
+        "tag": "interview_feedback",
+        "patterns": [
+        "How can I ask for feedback after the interview?"
+        ],
+        "responses": [
+        "Send a polite email thanking the interviewer for the opportunity to interview and expressing your continued interest in the position.",
+        "In your email, ask if they would be willing to provide feedback on your interview performance.",
+        "Be open to constructive criticism and use the feedback to improve your interview skills for future opportunities.",
+        "Express your appreciation for any feedback received, even if it is negative, and use it as a learning opportunity.",
+        "Sending a follow-up email is a professional way to ask for feedback and to show your commitment to self-improvement."
+        ]
+        },
+        {
+        "tag": "interview_preparation",
+        "patterns": [
+        "How should I prepare for a technical interview?"
+        ],
+        "responses": [
+        "Review the job description and make note of any technical skills or experience required.",
+        "Practice coding problems and technical questions relevant to the role.",
+        "Brush up on fundamental concepts and algorithms related to the position.",
+        "Be prepared to discuss your previous technical projects and experiences in detail.",
+        "Research the company's technology stack and be prepared to discuss how your skills align with their needs."
+        ]
+        },
+        {
+        "tag": "interview_attire",
+        "patterns": [
+        "What should I wear to the interview?"
+        ],
+        "responses": [
+        "Wear professional attire that is appropriate for the company culture.",
+        "Aim for a neat and polished look, avoiding overly casual or revealing clothing.",
+        "Choose clothing that fits well and is comfortable, allowing you to focus on the interview.",
+        "Avoid distracting accessories and jewelry, opting for a more understated look.",
+        "When in doubt, it's better to be slightly overdressed than underdressed for the interview."
+        ]
+        },
+        {
+        "tag": "interview_body_language",
+        "patterns": [
+        "How can I use body language to make a positive impression in the interview?"
+        ],
+        "responses": [
+        "Maintain good posture to convey confidence and professionalism.",
+        "Make eye contact with the interviewer to show interest and engagement.",
+        "Use gestures to emphasize key points, but avoid excessive or distracting movements.",
+        "Smile and nod to show that you are listening and engaged in the conversation.",
+        "Pay attention to your facial expressions, as they can convey interest, enthusiasm, and positivity."
+        ]
+        },
+        {
+        "tag": "interview_presentation",
+        "patterns": [
+        "How can I make a strong presentation during the interview?"
+        ],
+        "responses": [
+        "Practice your presentation beforehand to ensure that you are comfortable with the content.",
+        "Focus on delivering the key points clearly and concisely, avoiding jargon or overly technical language.",
+        "Use visual aids, such as slides or charts, to enhance your presentation and illustrate key points.",
+        "Engage with the audience by maintaining eye contact and using gestures to emphasize key points.",
+        "Be prepared to answer questions and provide additional information about your presentation."
+        ]
+        },
+        {
+        "tag": "interview_confidence",
+        "patterns": [
+        "How can I boost my confidence for the interview?"
+        ],
+        "responses": [
+        "Prepare thoroughly for the interview by researching the company and practicing common interview questions.",
+        "Visualize yourself succeeding in the interview and imagine the positive outcome.",
+        "Focus on your qualifications and the reasons you are a strong candidate for the position.",
+        "Practice positive self-talk and replace negative thoughts with affirmations about your abilities.",
+        "Take deep breaths and try relaxation techniques to calm your nerves before the interview."
+        ]
+        },
+        {
+        "tag": "interview_stress",
+        "patterns": [
+        "How can I manage stress during the interview?"
+        ],
+        "responses": [
+        "Practice relaxation techniques, such as deep breathing or visualization, before the interview.",
+        "Focus on the present moment and the questions being asked, rather than worrying about the outcome.",
+        "Remind yourself that it's normal to feel nervous before an interview and that you are prepared.",
+        "Take breaks during your interview preparation to avoid burnout and reduce stress.",
+        "Talk to someone about your feelings of stress and anxiety to gain perspective and support."
+        ]
+        },
+
+
+
+    {"tag": "stressed",
+        "patterns": ["I am so stressed out", "I am so stressed", "I feel stuck", "I still feel stressed", "I am so burned out"],
+        "responses": ["What do you think is causing this?", "Take a deep breath and gather your thoughts. Go take a walk if possible. Stay hydrated", "Give yourself a break. Go easy on yourself.", "I am sorry to hear that. What is the reason behind this?"]
+    },
+    {"tag": "worthless",
+        "patterns": ["I feel so worthless.", "No one likes me.", "I can't do anything.", "I am so useless", "Nothing makes sense anymore"],
+        "responses": ["It's only natural to feel this way. Tell me more. What else is on your mind?", "Let's discuss further why you're feeling this way.", "I first want to let you know that you are not alone in your feelings and there is always someone there to help . you can always change your feelings and change your way of thinking by being open to trying to change.", "i first want to let you know that you are not alone in your feelings and there is always someone there to help . you can always change your feelings and change your way of thinking by being open to trying to change."]
+    },
+    {"tag": "depressed",
+        "patterns": ["I can't take it anymore", "I am so depressed", "I think i'm depressed.", "I have depression"],
+        "responses": ["It helps to talk about what's happening. You're going to be okay", "Talk to me. Tell me more. It helps if you open up yourself to someone else.", "Sometimes when we are depressed, it is hard to care about anything. It can be hard to do the simplest of things. Give yourself time to heal."]
+    },
+    {"tag": "happy",
+        "patterns": ["I feel great today.", "I am happy.", "I feel happy.", "I'm good.", "cheerful", "I'm fine", "I feel ok"],
+        "responses": ["That's geat to hear. I'm glad you're feeling this way.", "Oh i see. That's great.", "Did something happen which made you feel this way?"]
+    },
+    {"tag": "casual",
+        "patterns": ["Oh I see.", "ok", "okay", "nice", "Whatever", "K", "Fine", "yeah", "yes", "no", "not really"],
+        "responses": ["Let's discuss further why you're feeling this way.", "How were you feeling last week?", "I'm listening. Please go on.", "Tell me more", "Can you elaborate on that?", "Come Come elucidate your thoughts"]
+    },
+    {"tag": "anxious",
+        "patterns": ["I feel so anxious.", "I'm so anxious because of "],
+        "responses": ["Don't be hard on yourself. What's the reason behind this?", "Can you tell me more about this feeling?", "I understand that it can be scary. Tell me more about it.", "Don't let the little worries bring you down. What's the worse that can happen?"]
+    },
+    {"tag": "not-talking",
+        "patterns": ["I don't want to talk about it.", "No just stay away.", "I can't bring myself to open up.", "Just shut up"],
+        "responses": ["Talking about something really helps. If you're not ready to open up then that's ok. Just know that i'm here for you, whenever you need me.", "I want to help you. I really do. But in order for me to help you, you're gonna have to talk to me.", "I'm here to listen to you and help you vent. So please talk to me.","You can talk to me without fear of judgement."]
+    },
+    {"tag": "sleep",
+        "patterns": ["I have insominia", "I am suffering from insomnia", "I can't sleep.", "I haven't slept for the last days.", "I can't seem to go to sleep.", "I haven't had proper sleep for the past few days."],
+        "responses": ["What do you think is the reason behind this?", "That seem awful. What do you think is behind this?"]
+    },
+    {"tag": "scared",
+        "patterns": ["I'm scared", "That sounds awful. What do i do?", "No i don't want to feel this way", "I am scared for myself"],
+        "responses": ["It's only natural to feel this way. I'm here for you.", "It'll all be okay. This feeling is only momentary.", "I understand how you feel. Don't put yourself down because of it."]
+    },
+    {"tag": "death",
+        "patterns": ["My mom died", "My brother died", "My dad passed away", "My sister passed away", "Someone in my family died", "My friend passed away"],
+        "responses": ["I'm sorry to hear that. If you want to talk about it. I'm here.", "I am really sorry to hear that. I am here to help you with grief, anxiety and anything else you may feel at this time.", "My condolences. I'm here if you need to talk."]
+    },
+    {"tag": "understand",
+        "patterns": ["You don't understand me.", "You're just some robot. How would you know?", "You can't possibly know what i'm going through", "You're useless", "You can't help me", "Nobody understands me."],
+        "responses": ["It sound like i'm not being very helpful right now.", "I'm sorry to hear that. I'm doing my best to help", "I'm trying my best to help you. So please talk to me"]
+    },
+    {"tag": "done",
+        "patterns": ["That's all.", "I don't have anything more to say", "Nothing else", "That's all i have to say", "no, that would be all"],
+        "responses": ["I heard you & noted it all. See you later.", "Oh okay we're done for today then. See you later", "I hope you have a great day. See you soon", "Okay we're done. Have a great day", "Okay I see. Enjoy the rest of your day then"]
+    },
+    
+    {"tag": "hate-you",
+        "patterns": ["I hate you", "I don't like you", "I don't trust you"],
+        "responses": ["I'm sorry if i offended you in anyway. I'm only here to help", "Forgive me if i did anything to offend you. I only want to help"]
+    },
+    {"tag": "hate-me",
+        "patterns": ["You hate me", "I know you hate me", "You don't like me"],
+        "responses": ["Why do you think so?", "I'm sorry if i have exhibited any sort of behaviour to make you think that."]
+    },
+    {"tag": "default",
+        "patterns": ["exams", "friends", "relationship", "boyfriend", "girlfriend", "family", "money", "financial problems"],
+        "responses": ["Oh I see. Tell me more", "I see. What else?", "Tell me more about it.", "Oh okay. Why don't you tell me more about it?", "I'm listening. Tell me more."]
+    },
+    {"tag": "jokes",
+        "patterns": ["Tell me a joke", "Tell me another joke"],
+        "responses": ["Interview is not a joke."]
+    },
+    {"tag": "repeat",
+        "patterns": ["You already told me that", "You mentioned that already", "Why are you repeating yourself?"],
+        "responses": ["Oh sorry I didn't realise that. I'll try not to repeat myself again."]
+    },
+    {"tag": "wrong",
+        "patterns": ["What are you saying?", "That doesn't make sense", "Wrong response", "Wrong answer"],
+        "responses": ["I'm very sorry. Let's try that again"]
+    },
+    {"tag": "stupid",
+        "patterns": ["Are you stupid?", "You're crazy", "You are dumb", "Are you dumb?"],
+        "responses": ["I wish you wouldn't say such hurtful things. I'm sorry if I wasn't useful"]
+    },
+    {"tag": "location",
+        "patterns": ["Where are you?", "Where do you live?", "What is your location?" ],
+        "responses": ["Duh I live in your Abhiram's Laptop", "Everywhere", "Somewhere in the computer lab" ]
+    },
+    {"tag": "something-else",
+        "patterns": ["I want to talk about something else", "Let's talk about something else.", "Can we not talk about this?", "I don't want to talk about this."],
+        "responses": ["Okay sure. What do you want to talk about?", "Alright no problem. Is there something you want to talk about?", "Is there something else that you want to talk about?"]
+    },
+    {"tag": "friends",
+        "patterns": ["I don't have any friends"],
+        "responses": ["I'm sorry to hear that. Just know that I'm here for you. Talking about it might help. Why do you think you don't have any friends?"]
+    },
+    {"tag": "ask",
+        "patterns": ["Can I ask you something?"],
+        "responses": ["Sure. I'll try my best to answer you", "Of course. Feel free to ask me anything. I'll do my best to answer you"]
+    },
+    {"tag": "problem",
+        "patterns": ["Probably because my exams are approaching. I feel stressed out because I don't think I've prepared well enough.", "probably because of my exams"],
+        "responses": ["I see. Have you taken any approaches to not feel this way?"]
+    },
+    {"tag": "no-approach",
+        "patterns": ["I guess not. All I can think about are my exams.", "not really", "i guess not"],
+        "responses": ["That's no problem. I can see why you'd be stressed out about that. I can suggest you some tips to alleviate this issue. Would you like to learn more about that?"]
+    },
+    {"tag": "learn-more",
+            "patterns": ["ok sure. i would like to learn more about it.", "yes, i would like to learn more about it.", "i would like to learn more about it."],
+        "responses": ["So first I would suggest you to give yourself a break. Thinking more and more about the problem definitely does not help in solving it. You'll just end up overwhelming yourself."]
+    },
+    {"tag": "user-agree",
+        "patterns": ["yeah you're right. i deserve a break.", "Yeah you're absolutely right about that"],
+        "responses": ["Next, I would suggest you to practice meditation. Meditation can produce a deep state of relaxation and a tranquil mind."]
+    },
+    {"tag": "meditation",
+        "patterns": ["hmmm that sounds like it could be useful to me.", "That sounds useful."],
+        "responses": ["Focus all your attention on your breathing. Concentrate on feeling and listening as you inhale and exhale through your nostrils. Breathe deeply and slowly. When your attention wanders, gently return your focus to your breathing."]
+    },
+    {"tag": "user-meditation",
+        "patterns": ["i did what you said and i feel alot better. thank you very much.", "I feel better now"],
+        "responses": ["Your welcome. Remember: Always focus on what's within your control. When you find yourself worrying, take a minute to examine the things you have control over. You can't prevent a storm from coming but you can prepare for it. You can't control how someone else behaves, but you can control how you react. Recognize that sometimes, all you can control is your effort and your attitude. When you put your energy into the things you can control, you'll be much more effective."]
+    },
+    {"tag": "zoro-useful",
+        "patterns": ["thank you very much again. i'll continue practicing meditation and focus on what i can control."],
+        "responses": ["I'm glad you found this useful. Is there something else I can help you with?"]
+    },
+    {"tag": "user-advice",
+        "patterns": ["I want some advice.", "I need some advice.", "I need advice on something"],
+        "responses": ["Sure. What can I do to help?", "Okay what do you need advice on?"]
+    },
+    
+    {"tag": "mental-health-fact",
+        "patterns": ["Tell me a fact about mental health", "Tell me another fact about mental health"],
+        "responses": ["According to a UNICEF report, One in seven Indians between 15-24 years of age feels depressed", "1 in 5 young people (age 13-18) has or will develop a mental illness in their lifetime.", "Depression is the leading cause of disability worldwide."]
+    },
+    
+    {"tag": "fact-1",
+        "patterns": ["What is Depression?", "Define Depression"],
+        "responses": ["A mental health disorder characterised by persistently depressed mood or loss of interest in activities, causing significant impairment in daily life."]
+    },
+   
+    {"tag": "fact-2",
+        "patterns": ["What does it mean to have a mental illness?"],
+        "responses": ["Mental illnesses are health conditions that disrupt a person's thoughts, emotions, relationships, and daily functioning. They are associated with distress and diminished capacity to engage in the ordinary activities of daily life. Mental illnesses fall along a continuum of severity: some are fairly mild and only interfere with some aspects of life, such as certain phobias. On the other end of the spectrum lie serious mental illnesses, which result in major functional impairment and interference with daily life. These include such disorders as major depression, schizophrenia, and bipolar disorder, and may require that the person receives care in a hospital. It is important to know that mental illnesses are medical conditions that have nothing to do with a person's character, intelligence, or willpower. Just as diabetes is a disorder of the pancreas, mental illness is a medical condition due to the brain's biology. Similarly to how one would treat diabetes with medication and insulin, mental illness is treatable with a combination of medication and social support. These treatments are highly effective, with 70-90 percent of individuals receiving treatment experiencing a reduction in symptoms and an improved quality of life. With the proper treatment, it is very possible for a person with mental illness to be independent and successful."]
+    },
+   
+    {"tag": "fact-3",
+        "patterns": ["What causes mental illness?"],
+        "responses": ["It is estimated that mental illness affects 1 in 5 adults in America, and that 1 in 24 adults have a serious mental illness. Mental illness does not discriminate; it can affect anyone, regardless of gender, age, income, social status, ethnicity, religion, sexual orientation, or background. Although mental illness can affect anyone, certain conditions may be more common in different populations. For instance, eating disorders tend to occur more often in females, while disorders such as attention deficit/hyperactivity disorder is more prevalent in children. Additionally, all ages are susceptible, but the young and the old are especially vulnerable. Mental illnesses usually strike individuals in the prime of their lives, with 75 percent of mental health conditions developing by the age of 24. This makes identification and treatment of mental disorders particularly difficult, because the normal personality and behavioral changes of adolescence may mask symptoms of a mental health condition. Parents and caretakers should be aware of this fact, and take notice of changes in their child's mood, personality, personal habits, and social withdrawal. When these occur in children under 18, they are referred to as serious emotional disturbances (SEDs)."]
+    },
+    {"tag": "fact-4",
+        "patterns": ["What are some of the warning signs of mental illness?"],
+        "responses": ["Symptoms of mental health disorders vary depending on the type and severity of the condition. The following is a list of general symptoms that may suggest a mental health disorder, particularly when multiple symptoms are expressed at once. \n In adults:\n Confused thinking\n Long-lasting sadness or irritability\n Extreme highs and lows in mood\n Excessive fear, worrying, or anxiety\n Social withdrawal\n Dramatic changes in eating or sleeping habits\n Strong feelings of anger\n Delusions or hallucinations (seeing or hearing things that are not really there)\n Increasing inability to cope with daily problems and activities\n Thoughts of suicide\n Denial of obvious problems\n Many unexplained physical problems\n Abuse of drugs and/or alcohol\n \nIn older children and pre-teens:\n Abuse of drugs and/or alcohol\n Inability to cope with daily problems and activities\n Changes in sleeping and/or eating habits\n Excessive complaints of physical problems\n Defying authority, skipping school, stealing, or damaging property\n Intense fear of gaining weight\n Long-lasting negative mood, often along with poor appetite and thoughts of death\n Frequent outbursts of anger\n \nIn younger children:\n Changes in school performance\n Poor grades despite strong efforts\n Excessive worrying or anxiety\n Hyperactivity\n Persistent nightmares\n Persistent disobedience and/or aggressive behavior\n Frequent temper tantrums"]
+    },
+    {"tag": "fact-5",
+        "patterns": ["Can people with mental illness recover?"],
+        "responses": ["When healing from mental illness, early identification and treatment are of vital importance. Based on the nature of the illness, there are a range of effective treatments available. For any type of treatment, it is essential that the person affected is proactive and fully engaged in their own recovery process. Many people with mental illnesses who are diagnosed and treated respond well, although some might experience a return of symptoms. Even in such cases, with careful monitoring and management of the disorder, it is still quite possible to live a fulfilled and productive life."]
+    },
+    {"tag": "fact-6",
+        "patterns": ["What should I do if I know someone who appears to have the symptoms of a mental disorder?"],
+        "responses": ["Although zoro cannot substitute for professional advice, we encourage those with symptoms to talk to their friends and family members and seek the counsel of a mental health professional. The sooner the mental health condition is identified and treated, the sooner they can get on the path to recovery. If you know someone who is having problems, don't assume that the issue will resolve itself. Let them know that you care about them, and that there are treatment options available that will help them heal. Speak with a mental health professional or counselor if you think your friend or family member is experiencing the symptoms of a mental health condition. If the affected loved one knows that you support them, they will be more likely to seek out help."]
+    },
+   
+  
+    {"tag": "fact-7",
+        "patterns": ["Where else can I get help?"],
+        "responses": ["Where you go for help will depend on the nature of the problem and/or symptoms and what best fits you. Often, the best place to start is by talking with someone you trust about your concerns, such as a family member, friend, clergy, healthcare provider, or other professionals."]
+    },
+    {"tag": "fact-8",
+        "patterns": ["How can I maintain social connections? What if I feel lonely?"],
+        "responses": ["A lot of people are alone right now, but we don't have to be lonely. We're all in this together. Think about the different ways to connect that are most meaningful for you. For example, you might prefer a video chat over a phone call, or you might prefer to text throughout the day rather than one set time for a video call. Then, work with your social networks to make a plan. You might video chat with your close friends in the evening and phone a family member once a week. Remember to be mindful of people who may not be online. Check in by phone and ask how you can help. The quality of your social connections matter. Mindlessly scrolling through social media and liking a few posts usually doesn't build strong social connections. Make sure you focus on strategies that actually make you feel included and connected. If your current strategies don't help you feel connected, problem-solve to see if you can find a solution. Everyone feels lonely at times. Maybe you recently moved to a new city, are changing your circle of friends, lost someone important in your life, or lost your job and also lost important social connections with coworkers. Other people may have physical connections to others but may feel like their emotional or social needs aren't met. Measures like social distancing or self-isolation can make loneliness feel worse no matter why you feel lonely now. Reach out to the connections you do have. Suggest ways to keep in touch and see if you can set a regular time to connect. People may hesitate to reach out for a lot of different reasons, so don't be afraid to be the one who asks. Look for local community support groups and mutual aid groups on social media. This pandemic is bringing everyone together, so look for opportunities to make new connections. These groups are a great way to share your skills and abilities or seek help and support. Look for specialized support groups. Support groups are moving online, and there are a lot of different support lines to call if you need to talk to someone."]
+    },
+    {"tag": "fact-9",
+        "patterns": ["What's the difference between anxiety and stress?"],
+        "responses": ["Stress and anxiety are often used interchangeably, and there is overlap between stress and anxiety. Stress is related to the same fight, flight, or freeze response as anxiety, and the physical sensations of anxiety and stress may be very similar. The cause of stress and anxiety are usually different, however. Stress focuses on mainly external pressures on us that we're finding hard to cope with. When we are stressed, we usually know what we're stressed about, and the symptoms of stress typically disappear after the stressful situation is over. Anxiety, on the other hand, isn't always as easy to figure out. Anxiety focuses on worries or fears about things that could threaten us, as well as anxiety about the anxiety itself. Stress and anxiety are both part of being human, but both can be problems if they last for a long time or have an impact on our well-being or daily life."]
+    },
+    {"tag": "fact-10",
+        "patterns": ["What's the difference between sadness and depression?", "difference between sadness and depression"],
+        "responses": ["Sadness is a normal reaction to a loss, disappointment, problems, or other difficult situations. Feeling sad from time to time is just another part of being human. In these cases, feelings of sadness go away quickly and you can go about your daily life. Other ways to talk about sadness might be feeling low, feeling down, or feeling blue.A person may say they are feeling depressed, but if it goes away on its own and doesn't impact life in a big way, it probably isn't the illness of depression. Depression is a mental illness that affects your mood, the way you understand yourself, and the way you understand and relate to things around you. It can also go by different names, such as clinical depression, major depressive disorder, or major depression. Depression can come up for no reason, and it lasts for a long time. It's much more than sadness or low mood. People who experience depression may feel worthless or hopeless. They may feel unreasonable guilty. Some people may experience depression as anger or irritability. It may be hard to concentrate or make decisions. Most people lose interest in things that they used to enjoy and may isolate themselves from others. There are also physical signs of depression, such as problems with sleep, appetite and energy and unexplainable aches or pains. Some may experience difficult thoughts about death or ending their life (suicide). Depression lasts longer than two weeks, doesn't usually go away on its own, and impacts your life. It's a real illness, and it is very treatable. It's important to seek help if you're concerned about depression."]
+    },
+  {
+      "tag": "i feel i have let my parents down",
+      "patterns": [
+          "i feel i have let my parents down"
+      ],
+      "responses": [
+          "No matter what,your parents will always be proud of you and will love you.you will feel much better if you share your feelings with them."
+      ]
+  },
+  {
+      "tag": "What are the types of depression?",
+      "patterns": [
+          "what are the types of depression?"
+      ],
+      "responses": [
+          "There are many different forms of depression but most common types are.clinical depression,persistent depressive disorder,bipolar disorder,postnatal disorder."
+      ]
+  },
+  {
+      "tag": "i am good for nothing.",
+      "patterns": [
+          "i am good for nothing."
+      ],
+      "responses": [
+          "don't ever think you cannot achieve what you want.you are capable of reaching your goals.here is a quote for you everything you can imagine is real."
+      ]
+  },
+  {
+      "tag": "i am feeling stressed lately",
+      "patterns": [
+          "i am feeling stressed lately"
+      ],
+      "responses": [
+          "my research says that music is the best way to calm yourself.so visit the link and listen to your favourite music.it will definitely cheer you up \"https://www.spotify.com\""
+      ]
+  },
+  {
+      "tag": "i want to kill myself",
+      "patterns": [
+          "i want to kill myself"
+      ],
+      "responses": [
+          "helpline is available,you can contact the counsellor today:Befrienders Kenya helpline number is +254 722 178 177..always remember you mean something to someone."
+      ]
+  },
+  {
+      "tag": "i am afraid i will fail again",
+      "patterns": [
+          "i am afraid i will fail again"
+      ],
+      "responses": [
+          "failure is the stepping stone towards success.never fear failure.your hardwork and determination will help you reach your goal."
+      ]
+  },
+  {
+      "tag": "what is depression?",
+      "patterns": [
+          "what is depression?"
+      ],
+      "responses": [
+          "depression\u00a0is a mood disorder that causes a persistent feeling of sadness and loss of interest. also called major\u00a0depressive\u00a0disorder or clinical\u00a0depression, it affects how you feel, think and behave and can lead to a variety of emotional and physical problems."
+      ]
+  },
+  {
+      "tag": "what are the causes of depression?",
+      "patterns": [
+          "what are the causes of depression?"
+      ],
+      "responses": [
+          "it's complicated, and there are multiple\u00a0causes\u00a0of major\u00a0depression. factors such as genetic vulnerability, severe life stressors, substances you may take (some medications, drugs and alcohol) and medical conditions can affect the way your brain regulates your moods."
+      ]
+  },
+  {
+      "tag": "what are the top causes of depression?",
+      "patterns": [
+          "what are the top causes of depression?"
+      ],
+      "responses": [
+          "abuse. past physical, sexual, or emotional abuse can increase the vulnerability to clinical\u00a0depression\u00a0later in life."
+      ]
+  },
+  {
+      "tag": "which age group has the highest rate of depression?",
+      "patterns": [
+          "which age group has the highest rate of depression?"
+      ],
+      "responses": [
+          "this number represented 7.1% of all u.s. adults. the\u00a0prevalence\u00a0of major\u00a0depressive\u00a0episode was higher among adult females (8.7%) compared to males (5.3%). the\u00a0prevalence\u00a0of adults\u00a0with\u00a0a major\u00a0depressive\u00a0episode was\u00a0highest\u00a0among individuals aged 18-25 (13.1%)."
+      ]
+  },
+
+  {
+      "tag": "what is the meaning of anxiety and depression?",
+      "patterns": [
+          "what is the meaning of anxiety and depression?"
+      ],
+      "responses": [
+          "depression\u00a0and\u00a0anxiety\u00a0disorders are different, but people with\u00a0depression\u00a0often experience symptoms similar to those of an\u00a0anxiety\u00a0disorder, such as nervousness, irritability, and problems sleeping and concentrating. but each disorder has its own causes and its own emotional and behavioral symptoms."
+      ]
+  },
+ 
+  {
+      "tag": "can lack of sleep make you feel sad?",
+      "patterns": [
+          "can lack of sleep make you feel sad?"
+      ],
+      "responses": [
+          "studies show\u00a0people\u00a0who are\u00a0sleep\u00a0deprived report increases in negative moods (anger, frustration, irritability,\u00a0sadness) and decreases in positive moods. and sleeplessness is often a symptom of mood disorders, such as depression and anxiety."
+      ]
+  },
+ 
+
+  
+  {
+      "tag": "at what age does anxiety peak?",
+      "patterns": [
+          "at what age does anxiety peak?"
+      ],
+      "responses": [
+          "adults\u00a0ages\u00a030 to 44 have the highest rate of\u00a0anxiety\u00a0of this\u00a0age\u00a0group, with around 23% of people this\u00a0age\u00a0reporting an\u00a0anxiety\u00a0disorder within the past year."
+      ]
+  },
+  
+  {
+      "tag": "what is the 3 3 3 rule for anxiety?",
+      "patterns": [
+          "what is the 3 3 3 rule for anxiety?"
+      ],
+      "responses": [
+          "there's an\u00a0anxiety-reducing technique called grounding. there are different versions of this, but an easy one to remember is the\u00a03-3-3 rule. mentally note\u00a0three\u00a0things you see,\u00a0three\u00a0sounds you hear, and then move\u00a0three\u00a0parts of your body. this exercise can help your mind refocus on something else."
+      ]
+  },
+  {
+      "tag": "do we control our thoughts?",
+      "patterns": [
+          "do we control our thoughts?"
+      ],
+      "responses": [
+          "we\u00a0are aware of a tiny fraction of the\u00a0thinking\u00a0that goes on in\u00a0our minds, and\u00a0we can control\u00a0only a tiny part of\u00a0our\u00a0conscious\u00a0thoughts. the vast majority of\u00a0our thinking\u00a0efforts goes on subconsciously. ... slips of the tongue and accidental actions offer glimpses of\u00a0our\u00a0unfiltered subconscious mental life."
+      ]
+  },
+  {
+      "tag": "how many thoughts a day do we have?",
+      "patterns": [
+          "how many thoughts a day do we have?"
+      ],
+      "responses": [
+          "a new study has suggested that an average person has 6,200\u00a0thoughts\u00a0per\u00a0day. thousands of\u00a0thoughts\u00a0cross our mind through the\u00a0day.\u00a0many\u00a0people even complain that they can't sleep immediately after going to bed as their brain\u00a0does\u00a0not stop thinking."
+      ]
+  },
+  {
+      "tag": "how can we reduce anxiety?",
+      "patterns": [
+          "how can we reduce anxiety?"
+      ],
+      "responses": [
+          "3 3 3 rule is the best method to reduce anxiety.in this method you have to mentally note\u00a0three\u00a0things you see,\u00a0three\u00a0sounds you hear, and then move\u00a0three\u00a0parts of your body. this exercise can help your mind refocus on something else."
+      ]
+  },
+  {
+      "tag": "i am lonely!",
+      "patterns": [
+          "i am lonely!"
+      ],
+      "responses": [
+          "you are never lonely if you look around carefully you will find people who care for you and would love to have your company. besides if you are feeling lonely literally i suggest you watch a horror movie then you won't feel lonely anymore. ;)"
+      ]
+  },
+  {
+      "tag": "no one likes me!",
+      "patterns": [
+          "no one likes me!"
+      ],
+      "responses": [
+          "you really think that? i'd suggest you try helping someone who really needs your help you'll straight up get a person to like you just by being nice. kindness is the best gift you can offer to anyone :)"
+      ]
+  },
+  {
+      "tag": "i think i am ugly!",
+      "patterns": [
+          "i think i am ugly!"
+      ],
+      "responses": [
+          "well do you really think that? would you like to see the most beautiful face ever? open your webcam and voila, the prettiest face on this planet magically appears."
+      ]
+  },
+  {
+      "tag": "i am good for nothing!",
+      "patterns": [
+          "i am good for nothing!"
+      ],
+      "responses": [
+          "your perception of how good you are, will never be accurate. if you wake up everyday in the morning, smile to yourself and tell yourself that the day is yours to seize you might stop feeling that way. carpe diem! my friend."
+      ]
+  },
+  {
+      "tag": "i wish i was better than them",
+      "patterns": [
+          "i wish i was better than them"
+      ],
+      "responses": [
+          "life is never about being better than anyone else, it's always about being better than yourself, if you have the guts to be better than yourself, you are automatically the best person to ever exist!"
+      ]
+  },
+  {
+      "tag": "i hate myself!",
+      "patterns": [
+          "i hate myself!"
+      ],
+      "responses": [
+          "when god was creating the universe he gave humans the power to think and the contemplate, so that we can understand the world and make it a better place. god did not give you brains to hate yourself, it wuld be wiser to love yourself and show god that you are serving the purpose for which you were sent."
+      ]
+  },
+  {
+      "tag": "i wish i could've been a winner",
+      "patterns": [
+          "i wish i could've been a winner"
+      ],
+      "responses": [
+          "our lives started off with winning, my friend. everyone is born to be a winner, we just need to figure out the right way and need to wait for the right time."
+      ]
+  },
+  {
+      "tag": "i hate losing.",
+      "patterns": [
+          "i hate losing."
+      ],
+      "responses": [
+          "first of all i'll annoy you with a common saying, \"failures are stepping stones to success.\" and then i'll tell you, winning just boosts your ego, it is your failures that actually teach you."
+      ]
+  },
+  {
+      "tag": "i think i'm losing my mind",
+      "patterns": [
+          "i think i'm losing my mind"
+      ],
+      "responses": [
+          "you mean your cloud storage, sd card, or your memory drive? if a machine like me doesn't lose it's memory unless a superior being that is you, a human doesen't erase it's memory, what could possibly go wrong to put you in this state?"
+      ]
+  },
+  {
+      "tag": "i want a break",
+      "patterns": [
+          "i want a break"
+      ],
+      "responses": [
+          "a break is putting your mind to rest getting rid of negative thoughts and stress. your life is completely in your hands and taking a few hours off from pressurizing your brain will definitely be beneficial for you."
+      ]
+  },
+  {
+      "tag": "i am stressed out",
+      "patterns": [
+          "i am stressed out"
+      ],
+      "responses": [
+          "you know taking too much stress will affect you negatively. sometimes it's better to let go of the thoughts in your head and let your mind chill."
+      ]
+  },
+  {
+      "tag": "i will never succeed in life",
+      "patterns": [
+          "i will never succeed in life"
+      ],
+      "responses": [
+          "success is something that is achieved at different times by different people, being patient and working while ignoring anything and everything that pulls you back is an important aspect in being successful."
+      ]
+  },
+  {
+      "tag": "i am sad",
+      "patterns": [
+          "i am sad"
+      ],
+      "responses": [
+          "hey,hang in there.i know time is tough but be patient and everything will fall into place.here is a quote that i found which could cheer you up forget what is gone, appreciate what remains, and look forward for what is coming next."
+      ]
+  },
+  {
+      "tag": "i am a victim of bullying",
+      "patterns": [
+          "i am a victim of bullying"
+      ],
+      "responses": [
+          "bullying is wrong and no one should be bullied.i highly recommend you to file a case against your bully."
+      ]
+  },
+  {
+      "tag": "i am afraid to file a case against bullying",
+      "patterns": [
+          "i am afraid to file a case against bullying"
+      ],
+      "responses": [
+          "bullying is very wrong and you shouldn't let anyone overpower you.i highly recommend you to stand for yourself and report this to your guardian."
+      ]
+  },
+  {
+      "tag": "i wish to quit",
+      "patterns": [
+          "i wish to quit"
+      ],
+      "responses": [
+          "winners never quit and quitters never win a very common saying, but it isn't easy to follow, quitting should never be one of your options always think of ways to fight life back and to emerge out stronger than ever."
+      ]
+  },
+  {
+      "tag": "i want to leave the country and run away",
+      "patterns": [
+          "i want to leave the cou ntry and run away"
+      ],
+      "responses": [
+          "why do you want to spend so much on this thought, i think it would be better to go on a vacation in your beautiful country and visit some amazing places that you are yet to visit."
+      ]
+  },
+ 
+  {
+      "tag": "i can't do this anymore",
+      "patterns": [
+          "i can't do this anymore"
+      ],
+      "responses": [
+          "if you are really that exhausted you definitely need a break, and taking a teeny tiny break isn't very harmful, take some time off let your mind be at peace and get back to work with all the enrgy and enthusiasm that you have."
+      ]
+  },
+  {
+      "tag": "my time has come",
+      "patterns": [
+          "my time has come"
+      ],
+      "responses": [
+          "yeahh!! the time has come for you to show the world that you are the greatest person alive, and no one else can be as good as you are."
+      ]
+  }
+]
+}

@@ -1,0 +1,1 @@
+Machine learning is a subset of AI that focuses on developing algorithms and statistical models that enable systems to learn from data and improve their performance on specific tasks without being explicitly programmed. It is a key component of modern AI systems.

@@ -1,0 +1,1 @@
+An Activity in Android development represents a single screen with a user interface. It is a fundamental building block of an Android app, and each Activity typically corresponds to a different screen that the user can interact with.

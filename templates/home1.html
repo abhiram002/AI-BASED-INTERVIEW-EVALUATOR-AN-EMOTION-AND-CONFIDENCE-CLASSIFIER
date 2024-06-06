@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Backlit Card</title>
+  <link rel='stylesheet' href='https://assets.codepen.io/1948355/reset_as.css'>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Glory:wght@800&display=swap");
+    html {
+      font-size: 36px;
+    }
+    
+    body {
+      font-family: "Glory", sans-serif;
+      background-image: radial-gradient(circle, #bbbbbb, #000 13em);
+      border-radius: 20px;
+    }
+    
+    .card {
+      position: relative;
+      display: inline-block;
+      margin: 1em;
+      cursor: pointer;
+      width: 200px; /* Set the width of each card */
+      height: 200px; /* Set the height of each card */
+      transition: box-shadow 0.3s, border-color 0.3s; /* Add transition for smooth effect */
+      border-radius: 200px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgb(244, 241, 241);
+    }
+    
+    .card:hover {
+      border: 5px solid white; /* White border on hover */
+      box-shadow: 0 0 0 2px rgb(247, 247, 247); /* Adjust the size and color as needed */
+    }
+    
+    .back {
+      position: absolute;
+      top: -6em;
+      left: -6em;
+      width: 12em;
+      height: 12em;
+      background-color: #f6f6f6;
+    }
+    
+    .blob {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-animation: blobAngle 25s var(--delay) infinite linear;
+              animation: blobAngle 25s var(--delay) infinite linear;
+      filter: blur(2em);
+    }
+    .blob::after {
+      content: "";
+      position: absolute;
+      width: 4em;
+      height: 4em;
+      border-radius: 50%;
+      background-color: var(--color);
+      -webkit-animation: blobMove 2s var(--delay2) infinite ease-in-out alternate;
+              animation: blobMove 2s var(--delay2) infinite ease-in-out alternate;
+    }
+    @-webkit-keyframes blobAngle {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    @keyframes blobAngle {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+    @-webkit-keyframes blobMove {
+      from {
+        transform: translate(-50%, -150%);
+      }
+      to {
+        transform: translate(-50%, 50%);
+      }
+    }
+    @keyframes blobMove {
+      from {
+        transform: translate(-50%, -150%);
+      }
+      to {
+        transform: translate(-50%, 50%);
+      }
+    }
+    .blob:nth-child(1) {
+      --delay: 0s;
+      --delay2: 0s;
+      --color: rgb(240, 240, 240);
+    }
+    .blob:nth-child(2) {
+      --delay: -3s;
+      --delay2: -0.6s;
+      --color: #fefff988;
+    }
+    .blob:nth-child(3) {
+      --delay: -6s;
+      --delay2: -1.2s;
+      --color: #ffffff;
+    }
+    .blob:nth-child(4) {
+      --delay: -9s;
+      --delay2: -1.8s;
+      --color: #ebf0f7c0;
+    }
+    .blob:nth-child(5) {
+      --delay: -12s;
+      --delay2: -2.4s;
+      --color: #fcf8fdb2;
+    }
+    
+    .text {
+      position: absolute;
+      top: -6em;
+      left: -6em;
+      width: 12em;
+      height: 12em;
+      background-color: #000;
+      mix-blend-mode: darken;
+      padding: 1em;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+<body style="display: flex;margin-left: 480px; margin-top: 100px; position: absolute;">
+
+
+
+  <script>
+    (function (w, d, s, o, f, js, fjs) {
+      w["botsonic_widget"] = o;
+      w[o] =
+        w[o] ||
+        function () {
+          (w[o].q = w[o].q || []).push(arguments);
+        };
+      (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+      js.id = o;
+      js.src = f;
+      js.async = 1;
+      fjs.parentNode.insertBefore(js, fjs);
+    })(window, document, "script", "Botsonic", "https://widget.writesonic.com/CDN/botsonic.min.js");
+    Botsonic("init", {
+      serviceBaseUrl: "https://api-azure.botsonic.ai",
+      token: "80b8ad02-f89c-4391-bba9-46939eb39966",
+    });
+  </script>
+    
+  <a href="/info" class="card" style="margin-right: 100px; margin-left: -90px;">
+    <div class="back" >
+      <div class="blob"></div>
+      <div class="blob"></div>
+      <div class="blob"></div>
+      <div class="blob"></div>
+      <div class="blob"></div>
+    </div>
+    <div class="text">
+      <h1 style="font-size:60px;color: rgb(240, 248, 255);">AI INTERVIEW</h1>
+      <span style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 30px; font-weight: bolder;color: rgba(240, 248, 255, 0.519)">Proceeds to the AI interview evaluator, which takes Video,audio input into consideration and generates the output</span>
+    </div>
+  </a>
+  
+  <a href="/info1" class="card" style="margin-left: 200px;">
+    <div class="back">
+      <div class="blob"></div>
+      <div class="blob"></div>
+      <div class="blob"></div>
+      <div class="blob"></div>
+      <div class="blob"></div>
+    </div>
+    <div class="text">
+      <h1 style="font-size:60px;color: rgb(255, 255, 255);""> CHATBOT</h1>
+      <span style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 30px; font-weight: bolder;color: rgba(240, 248, 255, 0.519)">Interact with our AI based Chatbot for any interview related suggestions and recommendation.!</span>
+    </div>
+  </a>
+  
+  
+</body>
+</html>

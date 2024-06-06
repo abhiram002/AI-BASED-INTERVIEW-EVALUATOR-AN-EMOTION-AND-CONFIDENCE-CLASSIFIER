@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Suggestion Box</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .suggestion-box {
+            width: 700px;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            height: 300px;
+            overflow: hidden;
+        }
+        .suggestion-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .suggestion-text {
+            font-size: 16px;
+            line-height: 1.5;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            overflow-y: auto;
+            max-height: 230px;
+        }
+        .suggestion-text span {
+            border-right: 2px solid transparent;
+            animation: typing 0.5s steps(20, start) infinite alternate;
+        }
+        @keyframes typing {
+            from {
+                border-color: transparent;
+            }
+            to {
+                border-color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        (function (w, d, s, o, f, js, fjs) {
+          w["botsonic_widget"] = o;
+          w[o] =
+            w[o] ||
+            function () {
+              (w[o].q = w[o].q || []).push(arguments);
+            };
+          (js = d.createElement(s)), (fjs = d.getElementsByTagName(s)[0]);
+          js.id = o;
+          js.src = f;
+          js.async = 1;
+          fjs.parentNode.insertBefore(js, fjs);
+        })(window, document, "script", "Botsonic", "https://widget.writesonic.com/CDN/botsonic.min.js");
+        Botsonic("init", {
+          serviceBaseUrl: "https://api-azure.botsonic.ai",
+          token: "80b8ad02-f89c-4391-bba9-46939eb39966",
+        });
+      </script>
+
+    <div class="suggestion-box">
+        <div class="suggestion-title">Suggestions</div>
+        <div class="suggestion-text" id="suggestion-text">{{suggestion}}</div>
+    </div>
+    <script>
+        const suggestionText = document.getElementById('suggestion-text').innerText.trim();
+        const suggestions = suggestionText.split('\\n');
+        let index = 0;
+        let text = '';
+        let currentLine = '';
+        let currentLineIndex = 0;
+
+        function typeSuggestion() {
+            if (index < suggestions.length) {
+                if (currentLineIndex < suggestions[index].length) {
+                    currentLine += suggestions[index][currentLineIndex];
+                    document.getElementById('suggestion-text').innerHTML = text + '<span>' + currentLine + '</span>';
+                    currentLineIndex++;
+                } else {
+                    text += currentLine + '<br>';
+                    currentLine = '';
+                    currentLineIndex = 0;
+                    index++;
+                }
+            } else {
+                clearInterval(interval);
+            }
+        }
+
+        const interval = setInterval(typeSuggestion, 20); // Change the interval (in milliseconds) to adjust the typing speed
+    </script>
+</body>
+</html>

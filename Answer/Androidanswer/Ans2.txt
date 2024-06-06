@@ -1,0 +1,1 @@
+The AndroidManifest.xml file is a crucial file in an Android app that describes essential information about the app to the Android system, such as the app's package name, components (activities, services, broadcast receivers, content providers), permissions required by the app, and hardware and software features required or supported by the app.

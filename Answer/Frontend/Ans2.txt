@@ -1,0 +1,1 @@
+Client-side scripting runs in the user's browser, while server-side scripting runs on the server before the page is sent to the browser.
